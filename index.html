@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#075b3a">
+  <meta name="description" content="S.T.O.P IP Trivia. Test your knowledge of intellectual property, copyright and online piracy.">
+  <title>S.T.O.P IP Trivia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">S.T.O.P</div>
+      <div>
+        <div class="brand-title">IP TRIVIA</div>
+        <div class="brand-subtitle">Special Taskforce Against Online Piracy</div>
+      </div>
+    </div>
+    <div class="header-badge">NCC</div>
+  </header>
+
+  <main class="app-shell">
+    <section id="start-screen" class="screen active">
+      <div class="hero-card">
+        <span class="eyebrow">TEST • LEARN • PROTECT</span>
+        <h1>How much do you know about intellectual property?</h1>
+        <p>Answer 10 questions on copyright, creators' rights, digital content and online piracy. Learn from every answer.</p>
+        <div class="stats-row">
+          <div><strong>10</strong><span>Questions</span></div>
+          <div><strong>3</strong><span>Difficulty levels</span></div>
+          <div><strong>∞</strong><span>Retakes</span></div>
+        </div>
+        <button id="start-btn" class="primary-btn">Start Quiz</button>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <span>01</span>
+          <h3>Choose an answer</h3>
+          <p>Select the option you think is correct.</p>
+        </div>
+        <div class="info-card">
+          <span>02</span>
+          <h3>Learn why</h3>
+          <p>Every answer comes with a short explanation.</p>
+        </div>
+        <div class="info-card">
+          <span>03</span>
+          <h3>See your score</h3>
+          <p>Finish the quiz and see how you performed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="screen">
+      <div class="quiz-top">
+        <div>
+          <span id="category-label" class="category-pill">Copyright</span>
+          <p id="question-count">Question 1 of 10</p>
+        </div>
+        <div id="score-mini" class="score-mini">Score: 0</div>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <div class="question-card">
+        <div class="difficulty" id="difficulty-label">Easy</div>
+        <h2 id="question-text"></h2>
+        <div id="options" class="options"></div>
+
+        <div id="feedback" class="feedback hidden">
+          <div id="feedback-title" class="feedback-title"></div>
+          <p id="explanation"></p>
+          <div class="did-you-know">
+            <strong>Did you know?</strong>
+            <span id="fact"></span>
+          </div>
+        </div>
+
+        <button id="next-btn" class="primary-btn next-btn hidden">Next Question</button>
+      </div>
+    </section>
+
+    <section id="result-screen" class="screen">
+      <div class="result-card">
+        <span class="eyebrow">QUIZ COMPLETE</span>
+        <h1>Your IP Knowledge Score</h1>
+        <div class="score-circle">
+          <span id="final-score">0/10</span>
+          <small id="final-percent">0%</small>
+        </div>
+        <h2 id="result-message"></h2>
+        <p id="result-detail"></p>
+        <div class="result-actions">
+          <button id="share-btn" class="secondary-btn">Share Result</button>
+          <button id="retry-btn" class="primary-btn">Play Again</button>
+        </div>
+        <p class="legal-note">Educational content only. It is not legal advice. Questions should be reviewed and approved by S.T.O.P/NCC before publication.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Protect Creativity. Protect Rights. Protect Revenue.</span>
+    <span>S.T.O.P • Nigerian Copyright Commission</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

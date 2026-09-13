@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "category": "Copyright",
+    "difficulty": "Easy",
+    "question": "Which of these is generally a copyright work?",
+    "options": [
+      "An original song",
+      "A bare idea",
+      "A fact",
+      "A mathematical principle"
+    ],
+    "answer": 0,
+    "explanation": "Original creative works such as songs are among the types of works protected by copyright, subject to the requirements of the applicable law.",
+    "fact": "Copyright focuses on original expression rather than a bare idea or fact."
+  },
+  {
+    "id": 2,
+    "category": "Online Piracy",
+    "difficulty": "Easy",
+    "question": "Which action is an example of online copyright infringement?",
+    "options": [
+      "Uploading a protected film without permission",
+      "Buying a licensed movie",
+      "Watching an authorised stream",
+      "Writing your own story"
+    ],
+    "answer": 0,
+    "explanation": "Uploading protected content without the required authorisation is an example of conduct which may infringe copyright.",
+    "fact": "Unauthorised uploads often make protected content available to a much wider audience."
+  },
+  {
+    "id": 3,
+    "category": "Creators' Rights",
+    "difficulty": "Easy",
+    "question": "Why should creators keep records of their original work?",
+    "options": [
+      "To support evidence of creation and ownership",
+      "To make the work automatically public domain",
+      "To remove all licensing conditions",
+      "To prevent anyone from reading it"
+    ],
+    "answer": 0,
+    "explanation": "Good records help establish the history of a work and support rights management and enforcement.",
+    "fact": "Drafts, dated files, contracts and licensing records are useful parts of a creator's documentation."
+  },
+  {
+    "id": 4,
+    "category": "Digital Content",
+    "difficulty": "Medium",
+    "question": "Buying access to a digital service usually means you have:",
+    "options": [
+      "A licence or permission under stated terms",
+      "Automatic ownership of every work in the service",
+      "Permission to redistribute everything",
+      "Permanent copyright ownership"
+    ],
+    "answer": 0,
+    "explanation": "Digital services often provide access under licence terms. Access rights and copyright ownership are different concepts.",
+    "fact": "Terms of service often define what a user is permitted to do with digital content."
+  },
+  {
+    "id": 5,
+    "category": "Copyright",
+    "difficulty": "Medium",
+    "question": "What is the key difference between an idea and its expression?",
+    "options": [
+      "Copyright generally protects expression, not a bare idea",
+      "Copyright protects every idea automatically",
+      "Ideas always require registration before use",
+      "Expression has no copyright protection"
+    ],
+    "answer": 0,
+    "explanation": "Copyright generally protects original expression fixed in a qualifying form rather than a bare idea by itself.",
+    "fact": "Two people may independently have the same idea while producing different protected expressions."
+  },
+  {
+    "id": 6,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "Why do piracy websites often use multiple domains?",
+    "options": [
+      "To make enforcement and disruption harder",
+      "To improve copyright ownership",
+      "To register a trademark",
+      "To create original content"
+    ],
+    "answer": 0,
+    "explanation": "Operators may switch domains, redirect traffic or create mirror sites after enforcement action to maintain access to infringing content.",
+    "fact": "Domain changes do not necessarily end an investigation when the underlying operation remains connected."
+  },
+  {
+    "id": 7,
+    "category": "Music",
+    "difficulty": "Medium",
+    "question": "A song recording may involve rights held by:",
+    "options": [
+      "Different rights holders",
+      "Only the listener",
+      "Only the website hosting it",
+      "Nobody once it is online"
+    ],
+    "answer": 0,
+    "explanation": "Music exploitation may involve different rights and different right holders, including creators, performers and owners of sound recordings.",
+    "fact": "A single track may involve several contractual and rights relationships."
+  },
+  {
+    "id": 8,
+    "category": "Broadcasting",
+    "difficulty": "Hard",
+    "question": "Why is unauthorised retransmission of a broadcast a serious rights issue?",
+    "options": [
+      "It may interfere with rights granted to the broadcaster and other right holders",
+      "Because broadcasts cannot be viewed twice",
+      "Because all broadcasts are government property",
+      "Because viewers cannot record anything"
+    ],
+    "answer": 0,
+    "explanation": "Unauthorised retransmission may interfere with rights and commercial arrangements associated with the broadcast and underlying content.",
+    "fact": "Digital piracy often targets live sports and premium channels because of their time-sensitive commercial value."
+  },
+  {
+    "id": 9,
+    "category": "IP Basics",
+    "difficulty": "Easy",
+    "question": "Which statement best describes intellectual property?",
+    "options": [
+      "Legal rights connected to creations, inventions and distinctive identifiers",
+      "Only physical property such as land",
+      "Only internet domain names",
+      "Only government-owned assets"
+    ],
+    "answer": 0,
+    "explanation": "Intellectual property is a broad area covering different legal rights, including copyright, trademarks and patents.",
+    "fact": "Different IP rights protect different subject matter and operate under different legal rules."
+  },
+  {
+    "id": 10,
+    "category": "Responsible Sharing",
+    "difficulty": "Easy",
+    "question": "What is a safer approach when sharing someone else's protected content online?",
+    "options": [
+      "Use authorised content or obtain the required permission",
+      "Remove the creator's name",
+      "Upload it to more websites",
+      "Assume anything online is free to use"
+    ],
+    "answer": 0,
+    "explanation": "Use authorised content, follow the applicable licence, or obtain the required permission before sharing protected material.",
+    "fact": "Being able to access a work online does not automatically mean you have permission to reproduce or redistribute it."
+  },
+  {
+    "id": 11,
+    "category": "Copyright",
+    "difficulty": "Hard",
+    "question": "Which statement is safest when discussing copyright exceptions?",
+    "options": [
+      "They depend on the applicable law and the specific facts",
+      "Every educational use is automatically permitted",
+      "Every non-commercial use is automatically permitted",
+      "Any use of a short work is automatically lawful"
+    ],
+    "answer": 0,
+    "explanation": "Copyright exceptions and limitations vary by jurisdiction and by the circumstances of the use. Specific legal analysis is often required.",
+    "fact": "Purpose, amount used, type of work and the applicable statutory framework may all matter."
+  },
+  {
+    "id": 12,
+    "category": "Digital Piracy",
+    "difficulty": "Hard",
+    "question": "Why is evidence preservation important during an online piracy investigation?",
+    "options": [
+      "It helps document what was observed and when",
+      "It guarantees a conviction",
+      "It replaces legal review",
+      "It makes copyright registration unnecessary"
+    ],
+    "answer": 0,
+    "explanation": "Preserving reliable evidence helps establish what investigators observed, the relevant URLs or infrastructure, and the timing of observations.",
+    "fact": "Screenshots alone may be less useful when they are not supported by dates, URLs, technical records or a clear chain of documentation."
+  }
+]
