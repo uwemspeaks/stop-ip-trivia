@@ -3,127 +3,127 @@
     "id": 1,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 36(1)(d) of the Copyright Act 2022, possessing which of the following for the sole purpose of making infringing copies of a work amounts to copyright infringement?",
+    "question": "A trader at a Lagos market openly sells pirated DVDs of a new Nollywood film, and also keeps blank master tapes solely for producing more illegal copies. Under section 36, which of these counts as copyright infringement?",
     "options": [
-      "Plates, master tapes, machines, equipment or contrivances",
-      "A personal diary",
-      "A registered business name certificate",
-      "A valid import licence"
+      "Only the selling — possessing copying equipment is not covered by the Act",
+      "Both selling the pirated DVDs and possessing equipment used solely to make infringing copies",
+      "Neither — infringement claims can only be brought by the film's director personally",
+      "Only if the trader also owns the market stall outright"
     ],
-    "answer": 0,
-    "explanation": "Section 36(1)(d) makes it an infringement to make or possess plates, master tapes, machines, equipment or contrivances used for the sole purpose of making infringing copies of a work.",
-    "fact": "Section 36 lists several distinct infringing acts, including importing infringing copies, selling or hiring them, and permitting a venue to be used for an infringing public performance.",
-    "verify": "Confirm current wording of section 36(1)(d) before publication."
+    "answer": 1,
+    "explanation": "Section 36(1) treats both selling or offering infringing copies for sale (36(1)(c)) and possessing plates, master tapes, machines or equipment used for the sole purpose of making infringing copies (36(1)(d)) as infringement.",
+    "fact": "Section 36(2) clarifies this applies whether the whole work or just a substantial part of it, in its original or an adapted form, is involved.",
+    "verify": "Confirm current wording of section 36(1) before publication."
   },
   {
     "id": 2,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 37(5), what may a court consider when deciding whether to award additional damages for copyright infringement?",
+    "question": "A Nollywood producer discovers her unreleased film has been leaked and pirated widely, and sues the distributor of the pirated copies in court. Under section 37(5), what may the court additionally consider when deciding damages?",
     "options": [
+      "How many awards the producer's previous films have won",
       "The flagrancy of the infringement and any benefit the defendant gained from it",
-      "The defendant's tax records for the past five years",
-      "Whether the plaintiff has ever infringed copyright before",
-      "The number of employees at the plaintiff's company"
+      "The defendant's personal relationship with the producer",
+      "Whether the film received good reviews from critics"
     ],
-    "answer": 0,
-    "explanation": "Section 37(5) allows a court, where effective relief would not otherwise be available, to award additional damages having regard to the flagrancy of the infringement and any benefit shown to have accrued to the defendant.",
-    "fact": "Section 37 also allows disputes over a right under the Act to be resolved by arbitration if the parties agree.",
+    "answer": 1,
+    "explanation": "Section 37(5) allows a court, where ordinary relief would not be effective, to award additional damages having regard to the flagrancy of the infringement and any benefit shown to have accrued to the defendant.",
+    "fact": "Section 37 also allows copyright disputes to be resolved by arbitration if both parties agree, as an alternative to full court proceedings.",
     "verify": "Confirm current wording of section 37(5) before publication."
   },
   {
     "id": 3,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 39, an organisation that collects and distributes royalties and represents more than 50 copyright owners generally cannot sue for infringement unless it is:",
+    "question": "A newly formed group of Afrobeats songwriters wants to start collecting performance royalties on behalf of over 100 musicians, and to sue infringers on their behalf. Under section 39, what must this group do first?",
     "options": [
-      "Registered as a limited liability company",
-      "Approved as a Collective Management Organisation under section 88, or exempted by the Commission",
-      "Owned entirely by Nigerian citizens",
-      "Older than 10 years"
+      "Nothing — any group representing musicians can sue for infringement immediately",
+      "Get approved as a Collective Management Organisation under section 88, or obtain a certificate of exemption from the Commission",
+      "Register as a private limited company at the Corporate Affairs Commission only",
+      "Wait until each of the 100 musicians has individually registered their songs"
     ],
     "answer": 1,
-    "explanation": "Section 39 bars such an organisation from commencing or maintaining an infringement action unless it is approved under section 88 to operate as a Collective Management Organisation, or has been issued a certificate of exemption by the Commission.",
-    "fact": "This provision is designed to ensure royalty-collecting bodies operate under the Commission's oversight before they can enforce rights on behalf of many owners at once.",
+    "explanation": "Section 39 bars an organisation representing more than 50 copyright owners, which collects and distributes royalties, from suing for infringement unless it is approved as a Collective Management Organisation under section 88, or holds a certificate of exemption from the Commission.",
+    "fact": "This rule exists so that bodies collecting royalties on behalf of many creators operate under the Commission's oversight.",
     "verify": "Confirm current wording of section 39 and its cross-reference to section 88 before publication."
   },
   {
     "id": 4,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 44(7), what is a person liable for if they make a copyrighted work available online, without consent, so members of the public can access it at a time and place of their choosing, for commercial purposes?",
+    "question": "The operator of an unlicensed website makes newly released Nollywood films available for on-demand streaming, without the rights owners' consent, and charges users a monthly subscription. Under section 44(7), what is this operator liable for?",
     "options": [
-      "No liability, since online access is not addressed by the Act",
-      "A civil warning only, with no criminal consequence",
+      "Nothing, since streaming is not addressed by the Copyright Act",
+      "A civil apology letter to the rights owners only",
       "An offence carrying a fine of at least N1,000,000 or imprisonment of at least five years, or both",
-      "Automatic transfer of the copyright to the infringer"
+      "Automatic transfer of ownership of the films to the platform"
     ],
     "answer": 2,
-    "explanation": "Section 44(7) makes unauthorised on-demand communication of a work to the public for commercial purposes an offence, punishable on conviction by a fine of at least N1,000,000 or imprisonment for at least five years, or both.",
-    "fact": "This provision targets the kind of on-demand online availability that unlicensed streaming and download platforms typically rely on.",
+    "explanation": "Section 44(7) makes it an offence, without the owner's consent, to communicate a work to the public for commercial purposes in a way that lets people access it at a time and place they choose — punishable by a fine of at least N1,000,000 or imprisonment of at least five years, or both.",
+    "fact": "This provision is a core legal basis for taking action against unlicensed streaming platforms, which is central to S.T.O.P.'s enforcement mandate.",
     "verify": "Confirm the exact fine and imprisonment figures in section 44(7) before publication, as monetary penalties are the detail most likely to be amended."
   },
   {
     "id": 5,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 44(9), the Nigerian Copyright Commission has the power to \"compound\" certain offences. What does this mean in practice?",
+    "question": "The Nigerian Copyright Commission wants to quickly resolve a minor first-time piracy case without a full criminal trial, by accepting a payment from the offender instead. Under section 44(9), what limits this payment?",
     "options": [
-      "The Commission can accept a sum of money from the offender instead of pursuing conviction, capped at double the minimum fine",
-      "The Commission can double the prison sentence at will",
-      "The Commission can merge two unrelated offences into one case",
-      "The Commission must always refer the matter to the police"
+      "There is no limit — the Commission can charge any amount it wants",
+      "The payment cannot exceed double the minimum fine the offender would face if convicted",
+      "The payment must always equal exactly N1,000,000",
+      "The offender must pay in physical currency only, never by transfer"
     ],
-    "answer": 0,
-    "explanation": "Section 44(9) gives the Commission power to compound an offence under the Act by accepting a sum of money it deems fit, not exceeding double the minimum fine the offender would otherwise face on conviction.",
-    "fact": "Compounding offers a faster administrative resolution and is a tool the Commission can use instead of, or ahead of, a full prosecution.",
+    "answer": 1,
+    "explanation": "Section 44(9) allows the Commission to compound an offence by accepting a sum of money it considers fit, but that sum cannot exceed double the minimum fine the offender would have faced on conviction.",
+    "fact": "Compounding gives the Commission a faster administrative route to resolve some cases instead of pursuing a full prosecution.",
     "verify": "Confirm current wording of section 44(9) before publication."
   },
   {
     "id": 6,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 46(4), if a body corporate is convicted of a copyright offence, what may the court order regarding its assets?",
+    "question": "A DVD duplication company is convicted of mass-producing pirated films for sale. Under section 46(4), what may the court order regarding the company's assets?",
     "options": [
-      "Nothing — only individual directors can be penalised",
+      "Nothing — only individual staff members can ever be penalised",
       "Forfeiture of the company's assets and properties, unless it proves they were not proceeds of the offence",
-      "Automatic dissolution of the company by the Corporate Affairs Commission",
-      "Transfer of the company's assets to the Ministry of Finance"
+      "Automatic transfer of the business to a rival, licensed production company",
+      "A public apology published in a national newspaper, with no financial consequence"
     ],
     "answer": 1,
-    "explanation": "Section 46(4) allows the court to order that a convicted body corporate's assets and properties be forfeited, unless the company proves to the court's satisfaction that those assets were not proceeds of the offence.",
-    "fact": "Section 46 also makes directors, managers or other officers personally liable where an offence was committed with their consent or connivance.",
+    "explanation": "Section 46(4) allows a court to order the forfeiture of a convicted body corporate's assets and properties, unless the company proves to the court's satisfaction those assets were not proceeds of the offence.",
+    "fact": "Section 46 also makes a company's directors, managers or other officers personally liable where an offence was committed with their consent or connivance.",
     "verify": "Confirm current wording of section 46(4) before publication."
   },
   {
     "id": 7,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 49, what does the Copyright Act empower the Commission to prescribe, with the consent of the Minister, to help combat piracy?",
+    "question": "A market vendor is found reproducing the Commission's official anti-piracy hologram stickers and attaching fake versions to pirated CDs to make them look genuine. Under section 49, what has this vendor done?",
     "options": [
-      "A national curfew for entertainment venues",
-      "A design, label, mark, impression or other anti-piracy device for use on copyright works",
-      "A fixed retail price for all copyrighted goods",
-      "A requirement that all works be printed only in Nigeria"
+      "Nothing illegal, since holograms are just decorative packaging",
+      "Committed an offence for counterfeiting a prescribed anti-piracy device",
+      "Only a trademark issue, unrelated to copyright law",
+      "A minor labelling error that only Customs can address"
     ],
     "answer": 1,
-    "explanation": "Section 49(1) empowers the Commission, with the Minister's consent, to prescribe an anti-piracy device — such as a design, label, mark or impression — for use on or in connection with copyright works.",
-    "fact": "Reproducing, counterfeiting, or unlawfully possessing such a prescribed anti-piracy device is itself made a separate offence under the same section.",
+    "explanation": "Section 49 empowers the Commission to prescribe anti-piracy devices such as marks or holograms, and makes it an offence to reproduce or counterfeit such a device without the Commission's permission.",
+    "fact": "Separate offences under the same section also cover selling goods that don't carry a required anti-piracy device, or possessing equipment made to produce one.",
     "verify": "Confirm current wording of section 49 before publication."
   },
   {
     "id": 8,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 50(8), a person who has lawfully obtained the right to use a computer programme may circumvent a technological protection measure for which of these purposes?",
+    "question": "A Nigerian software developer has legally purchased a computer programme and wants to study part of its code, purely to make her own independently created programme work together with it. Under section 50(8), is this generally permitted?",
     "options": [
-      "To resell the programme without a licence",
-      "To identify and analyse elements of the programme solely for achieving interoperability with other programmes",
-      "To remove all copyright notices from the programme",
-      "To distribute the programme freely to the public"
+      "No — any circumvention of a technological protection measure is always illegal",
+      "Yes, as a narrow exception for identifying and analysing elements of the programme to achieve interoperability",
+      "Only if she first obtains a court order allowing her to reverse-engineer the software",
+      "Yes, but only if she publishes the original programme's source code afterward"
     ],
     "answer": 1,
-    "explanation": "Section 50(8) permits a lawful user of a computer programme to circumvent a technological protection measure solely to identify and analyse elements of the programme, where necessary to achieve interoperability with independently created programmes.",
+    "explanation": "Section 50(8) allows a lawful user of a computer programme to circumvent a technological protection measure solely to identify and analyse elements of the programme, where this is necessary to achieve interoperability with an independently created programme.",
     "fact": "This is a narrow exception; the general rule under section 50(1)-(2) prohibits circumventing technological protection measures or trafficking in circumvention tools.",
     "verify": "Confirm current wording of section 50(8)-(9) before publication."
   },
@@ -131,112 +131,112 @@
     "id": 9,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 51, what does \"rights management information\" refer to, and what does the Act prohibit doing to it?",
+    "question": "Someone downloads a licensed film, deliberately strips out the digital watermark that identifies its rights owner, and re-uploads it to make the pirated copy harder to trace. Under section 51, what has this person done?",
     "options": [
-      "It is a person's national identification number, and altering it is prohibited",
-      "It is information identifying a work, its author or owner and the terms of its use, and the Act prohibits knowingly removing, altering, or falsifying it to facilitate infringement",
-      "It is a broadcaster's transmission frequency, and changing it requires NBC approval",
-      "It is a company's tax identification number, and forging it is a tax offence only"
+      "Nothing actionable, since watermarks are just technical metadata",
+      "Unlawfully removed rights management information, in a way the Act specifically prohibits",
+      "Committed a trademark offence rather than a copyright one",
+      "Only violated the streaming platform's terms of service, not the law"
     ],
     "answer": 1,
-    "explanation": "Section 51 protects rights management information — details identifying a work, its author, owner, or usage terms — by prohibiting its knowing falsification, removal, or alteration where this is intended to induce, enable, facilitate or conceal infringement.",
-    "fact": "Rights management information can include a code or number attached to a work, not just visible text.",
+    "explanation": "Section 51 prohibits knowingly removing or altering rights management information — data identifying a work, its author or owner, or its terms of use — without authority, where this is meant to induce, enable, facilitate or conceal infringement.",
+    "fact": "The same section also makes it an offence to distribute or broadcast copies known to have had this information removed or altered.",
     "verify": "Confirm current wording of section 51 before publication."
   },
   {
     "id": 10,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 53, once the Nigerian Customs Service impounds a suspected infringing import at the border, for how long can the goods generally be held before a decision must be made on proceedings?",
+    "question": "A Customs officer at a Nigerian port suspects a shipping container holds pirated imported films and impounds it. Under section 53(4), how long can the goods generally be held before a decision on legal proceedings must be made?",
     "options": [
-      "24 hours, with no extension possible",
+      "24 hours only, with no possible extension",
       "10 working days, extendable by a further 10 working days",
-      "One calendar year",
-      "There is no time limit"
+      "A full calendar year",
+      "There is no time limit at all"
     ],
     "answer": 1,
-    "explanation": "Section 53(4) provides that impounded works shall not be kept for more than 10 working days, which may be extended by another 10 working days, within which the rights owner or the Commission must decide whether to commence proceedings.",
-    "fact": "This border-measures provision lets a copyright owner request that Customs treat infringing imports as prohibited goods for a specified period.",
+    "explanation": "Section 53(4) provides that impounded goods generally cannot be held for more than 10 working days, extendable by another 10 working days, within which the rights owner or the Commission must decide whether to commence proceedings.",
+    "fact": "This border-measures provision lets a rights owner ask the Commission to notify Customs to treat infringing imports as prohibited goods for a specified period.",
     "verify": "Confirm current wording of section 53(4) before publication."
   },
   {
     "id": 11,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under sections 54 and 55, once a service provider receives a valid notice of infringing content, what is it required to do?",
+    "question": "A video-sharing platform operating in Nigeria receives a properly completed infringement notice from a rights owner about content a user has uploaded. Under sections 54 and 55, what must the platform do?",
     "options": [
       "Ignore the notice unless a court order is also provided",
-      "Promptly notify the subscriber responsible for the content and expeditiously take down or disable access to it, then notify the copyright owner",
-      "Immediately delete the subscriber's entire account with no notice",
-      "Forward the notice to the Nigerian Police Force and take no further action"
+      "Promptly notify the user responsible, expeditiously take down or disable access to the content, then notify the rights owner",
+      "Immediately delete the user's entire account with no notice or process",
+      "Forward the matter to the police and take no further action itself"
     ],
     "answer": 1,
-    "explanation": "Section 55(1) requires a service provider who receives a valid notice under section 54 to promptly notify the affected subscriber, expeditiously take down or disable access to the infringing content, and then notify the copyright owner.",
-    "fact": "A subscriber can contest a takedown with a counter-notice; if the copyright owner does not respond within seven days of the counter-notice, the service provider may restore the content.",
+    "explanation": "Section 55(1) requires a service provider that receives a valid notice under section 54 to promptly notify the affected user, expeditiously take down or disable access to the content, and then notify the rights owner.",
+    "fact": "The user can contest a takedown with a counter-notice; if the rights owner does not respond within seven days, the platform may restore the content.",
     "verify": "Confirm current wording of sections 54-55 before publication."
   },
   {
     "id": 12,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 56, what happens after a service provider sends a second infringement notification relating to the same subscriber account, where no valid challenge is pending?",
+    "question": "A social media user's account has already received one infringement warning, and is then reported again for the same kind of infringing post, with no challenge pending. Under section 56, what must the platform do?",
     "options": [
-      "Nothing further can be done to that account",
-      "The service provider must suspend the account for a period of not less than one month",
-      "The subscriber is automatically banned from the internet nationwide",
-      "The service provider must publish the subscriber's name publicly"
+      "Nothing further — one warning is always the maximum action allowed",
+      "Suspend the account for a period of not less than one month",
+      "Permanently ban the user from using the internet nationwide",
+      "Publicly publish the user's real name and address"
     ],
     "answer": 1,
-    "explanation": "Section 56(1)(b) requires a service provider to suspend the account for at least one month after a second notification relating to the same account, provided no challenge under subsection (2) is pending.",
-    "fact": "A subscriber who believes they were misidentified can challenge a warning notice within 10 days, and unresolved challenges may go to the Commission for a decision.",
+    "explanation": "Section 56(1)(b) requires a service provider to suspend the account for at least one month after a second infringement notification relating to that account, where no challenge under subsection (2) is pending.",
+    "fact": "A user who believes they were misidentified can challenge a warning notice within 10 days, and unresolved challenges may be referred to the Commission.",
     "verify": "Confirm current wording of section 56 before publication."
   },
   {
     "id": 13,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under sections 58 and 59, a service provider that merely hosts user content or provides tools like search or hyperlinks is generally shielded from monetary liability for infringement, PROVIDED it meets certain conditions. Which of these is one of those conditions?",
+    "question": "A cloud storage company hosts files uploaded by its subscribers and has no way of knowing in advance what each person uploads. Under sections 58 and 59, what is one condition it must meet to avoid monetary liability if a user's upload turns out to be infringing?",
     "options": [
-      "It must charge subscribers a monthly fee",
-      "It must not have actual knowledge of the infringing activity, and must act expeditiously to remove infringing material once it becomes aware",
-      "It must be based outside Nigeria",
-      "It must be the sole platform hosting the content"
+      "It must charge every subscriber a premium fee",
+      "It must lack actual knowledge of the infringing activity, and act expeditiously to remove or disable access once it becomes aware",
+      "It must be a company incorporated outside Nigeria",
+      "It must scan and pre-approve every file before it is uploaded"
     ],
     "answer": 1,
-    "explanation": "Sections 58 and 59 protect qualifying service providers from monetary liability where, among other conditions, they lack actual knowledge of infringing activity and act expeditiously to remove or disable access once they become aware of it.",
-    "fact": "These 'safe harbour' style provisions only apply to service providers who are neutral and passive, and who have designated an agent to receive infringement notices, per section 62.",
+    "explanation": "Sections 58 and 59 shield a qualifying service provider from monetary liability where, among other conditions, it does not have actual knowledge of the infringing activity and acts expeditiously to remove or disable access once it becomes aware.",
+    "fact": "These protections only apply to service providers who are neutral and passive and who, under section 62, have designated an agent to receive infringement notices.",
     "verify": "Confirm current wording of sections 58, 59 and 62 before publication."
   },
   {
     "id": 14,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 61, what power does the Nigerian Copyright Commission have over online content it reasonably believes infringes copyright?",
+    "question": "The Nigerian Copyright Commission identifies a foreign-hosted website that streams thousands of pirated Nigerian films to Nigerian users. Under section 61, what power does the Commission have over access to that website within Nigeria?",
     "options": [
-      "It can only recommend that Google delist the content",
+      "None — it can only ask the website's foreign host to voluntarily comply",
       "It may, directly or with assistance, block or disable access to the content, link or website",
-      "It can only fine the internet service provider, without touching the content",
-      "It has no authority over online content at all"
+      "It can only issue a public statement condemning the website",
+      "It must wait for the website's own country to prosecute the operators first"
     ],
     "answer": 1,
     "explanation": "Section 61 gives the Commission power, notwithstanding any other law, to block or disable access — directly or with the assistance of any other person — to content, links or websites it reasonably believes infringe copyright.",
-    "fact": "This is one of the legal powers underpinning S.T.O.P.'s enforcement work against piracy websites and streaming platforms.",
+    "fact": "This is one of the legal powers underpinning S.T.O.P.'s enforcement work against piracy websites and unlicensed streaming platforms.",
     "verify": "Confirm current wording of section 61 before publication."
   },
   {
     "id": 15,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
-    "question": "Under section 19, how long does copyright generally last for a literary, musical or artistic work (other than a photograph), compared to a sound recording or broadcast?",
+    "question": "A record label wants to reissue two things: a song written by a composer who died in 1974, and the original 1975 sound recording of that song. Under section 19, which is more likely to still require permission today?",
     "options": [
-      "Both last exactly 25 years from creation",
-      "Literary, musical and artistic works: 70 years after the author's death. Sound recordings and broadcasts: 50 years from being made available to the public",
-      "Both last forever, with no expiry",
-      "Literary works: 10 years. Sound recordings: 100 years"
+      "Both are already in the public domain and need no permission",
+      "The song (as a musical work) remains protected until 70 years after the composer's death, around 2044 — while the 1975 sound recording's separate 50-year term has likely already expired",
+      "Both remain protected until exactly the same year, since they were created together",
+      "The sound recording is protected forever, while the song itself expired in 1975"
     ],
     "answer": 1,
-    "explanation": "Section 19(1)(a) sets the term for literary, musical or artistic works (other than photographs) at 70 years after the end of the year the author dies, while sound recordings and broadcasts under section 19(1)(d)-(e) generally run for 50 years from when the work was first made available to the public, or from creation if never made available.",
-    "fact": "Audiovisual works and photographs also generally get the shorter 50-year term under section 19(1)(c), while anonymous or pseudonymous works get 70 years from publication under section 19(2), unless the author later becomes known.",
+    "explanation": "Section 19(1)(a) protects a musical work for 70 years after the end of the year the author dies — so a composer who died in 1974 is protected until roughly 2044 — while section 19(1)(d) gives sound recordings a separate, shorter term of 50 years from when they were first made available, which for a 1975 recording has likely already run out.",
+    "fact": "This is why a single old song can involve two separate copyrights with different expiry dates: the underlying musical composition, and the specific sound recording of a performance of it.",
     "verify": "Confirm current wording of section 19 before publication."
   }
 ]
