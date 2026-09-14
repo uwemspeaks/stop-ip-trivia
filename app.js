@@ -1,42 +1,141 @@
-let questionBank = [];
-let quizQuestions = [];
-let currentIndex = 0;
-let score = 0;
-let answered = false;
+/* ==========================================================================
+   S.T.O.P IP TRIVIA — app.js
 
-const $ = (id) => document.getElementById(id);
+   Sections in this file:
+   1. Config
+   2. State
+   3. DOM references
+   4. Data loading
+   5. Quiz logic (pure-ish helper functions)
+   6. Rendering
+   7. Event handlers
+   8. Sharing
+   9. Init
+   ========================================================================== */
 
-const screens = {
-  start: $("start-screen"),
-  quiz: $("quiz-screen"),
-  result: $("result-screen")
+/* ---------------------------------------------------------------------- */
+/* 1. CONFIG                                                              */
+/* ---------------------------------------------------------------------- */
+
+const CONFIG = {
+  // The quiz always uses every valid question currently in questions.json —
+  // there is no fixed "10" anywhere. Swap questions.json for a 15-question
+  // bank and the app automatically becomes a 15-question quiz; swap in a
+  // 40-question bank and it becomes a 40-question quiz. minQuestionsRequired
+  // is only a floor below which the app refuses to run (see loadQuestions).
+  questionsFile: "questions.json",
+  minQuestionsRequired: 10,
 };
 
-function showScreen(screen) {
-  Object.values(screens).forEach(s => s.classList.remove("active"));
-  screen.classList.add("active");
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
+/* ---------------------------------------------------------------------- */
+/* 2. STATE                                                               */
+/* ---------------------------------------------------------------------- */
+
+const state = {
+  allQuestions: [],
+  quizQuestions: [], // the shuffled subset used for this attempt, each with shuffled options
+  currentIndex: 0,
+  score: 0,
+  hasAnswered: false,
+};
+
+/* ---------------------------------------------------------------------- */
+/* 3. DOM REFERENCES                                                      */
+/* ---------------------------------------------------------------------- */
+
+const dom = {
+  screens: {
+    intro: document.getElementById("screen-intro"),
+    quiz: document.getElementById("screen-quiz"),
+    result: document.getElementById("screen-result"),
+    error: document.getElementById("screen-error"),
+  },
+  btnStart: document.getElementById("btn-start"),
+  btnNext: document.getElementById("btn-next"),
+  btnPlayAgain: document.getElementById("btn-play-again"),
+  btnShare: document.getElementById("btn-share"),
+  btnRetry: document.getElementById("btn-retry"),
+
+  progressLabel: document.getElementById("quiz-progress-label"),
+  progressFill: document.getElementById("progress-fill"),
+  progressTrack: document.querySelector(".progress-track"),
+
+  questionCategory: document.getElementById("question-category"),
+  questionDifficulty: document.getElementById("question-difficulty"),
+  questionText: document.getElementById("quiz-heading"),
+  optionsList: document.getElementById("options-list"),
+
+  feedbackPanel: document.getElementById("feedback-panel"),
+  feedbackVerdict: document.getElementById("feedback-verdict"),
+  feedbackExplanation: document.getElementById("feedback-explanation"),
+  feedbackFact: document.getElementById("feedback-fact"),
+
+  resultScore: document.getElementById("result-score"),
+  resultPercent: document.getElementById("result-percent"),
+  resultAssessment: document.getElementById("result-assessment"),
+
+  errorMessage: document.getElementById("error-message"),
+};
+
+/* ---------------------------------------------------------------------- */
+/* 4. DATA LOADING                                                        */
+/* ---------------------------------------------------------------------- */
 
 async function loadQuestions() {
   try {
-    const response = await fetch("questions.json", { cache: "no-store" });
-    if (!response.ok) throw new Error("Question bank could not be loaded.");
-    questionBank = await response.json();
-    if (!Array.isArray(questionBank) || questionBank.length < 10) {
-      throw new Error("At least 10 questions are required.");
+    const response = await fetch(CONFIG.questionsFile, { cache: "no-cache" });
+
+    if (!response.ok) {
+      throw new Error(`Request failed with status ${response.status}`);
     }
-    $("start-btn").disabled = false;
-  } catch (error) {
-    console.error(error);
-    $("start-btn").textContent = "Question bank unavailable";
-    $("start-btn").disabled = true;
-    alert("The quiz could not load its question bank. Please refresh the page.");
+
+    const data = await response.json();
+
+    if (!Array.isArray(data) || data.length === 0) {
+      throw new Error("Question bank is empty or malformed.");
+    }
+
+    const validQuestions = data.filter(isValidQuestion);
+
+    if (validQuestions.length < CONFIG.minQuestionsRequired) {
+      showError(
+        `Only ${validQuestions.length} valid question(s) are available, but ${CONFIG.minQuestionsRequired} are required to run the quiz. Please update questions.json.`
+      );
+      return;
+    }
+
+    state.allQuestions = validQuestions;
+    updateQuestionCountDisplays(validQuestions.length);
+    showScreen("intro");
+  } catch (err) {
+    console.error("Failed to load questions:", err);
+    showError(
+      "The question bank could not be loaded. Please check your connection and try again."
+    );
   }
 }
 
-function shuffle(items) {
-  const copy = [...items];
+function isValidQuestion(q) {
+  return (
+    q &&
+    typeof q.id !== "undefined" &&
+    typeof q.question === "string" &&
+    Array.isArray(q.options) &&
+    q.options.length >= 2 &&
+    typeof q.answer === "number" &&
+    q.answer >= 0 &&
+    q.answer < q.options.length &&
+    typeof q.category === "string" &&
+    typeof q.difficulty === "string"
+  );
+}
+
+/* ---------------------------------------------------------------------- */
+/* 5. QUIZ LOGIC                                                          */
+/* ---------------------------------------------------------------------- */
+
+function shuffleArray(array) {
+  const copy = array.slice();
   for (let i = copy.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [copy[i], copy[j]] = [copy[j], copy[i]];
@@ -44,113 +143,228 @@ function shuffle(items) {
   return copy;
 }
 
+/**
+ * Builds the set of questions for a single quiz attempt:
+ * - randomly selects up to `count` questions from the bank
+ * - shuffles each question's options while tracking the new correct index
+ */
+function buildQuizQuestions(bank, count) {
+  const chosen = shuffleArray(bank).slice(0, count);
+
+  return chosen.map((q) => {
+    const optionOrder = shuffleArray(q.options.map((_, i) => i));
+    const shuffledOptions = optionOrder.map((originalIndex) => q.options[originalIndex]);
+    const newAnswerIndex = optionOrder.indexOf(q.answer);
+
+    return {
+      id: q.id,
+      category: q.category,
+      difficulty: q.difficulty,
+      question: q.question,
+      options: shuffledOptions,
+      answer: newAnswerIndex,
+      explanation: q.explanation || "",
+      fact: q.fact || "",
+    };
+  });
+}
+
+function getAssessment(score, total) {
+  const ratio = score / total;
+  if (ratio >= 0.9) return "Excellent IP knowledge.";
+  if (ratio >= 0.7) return "Strong foundation.";
+  if (ratio >= 0.4) return "Good start. Keep building.";
+  return "Time for another round.";
+}
+
+const OPTION_LETTERS = ["A", "B", "C", "D", "E", "F"];
+
+/* ---------------------------------------------------------------------- */
+/* 6. RENDERING                                                           */
+/* ---------------------------------------------------------------------- */
+
+function showScreen(name) {
+  Object.entries(dom.screens).forEach(([key, el]) => {
+    el.classList.toggle("is-hidden", key !== name);
+  });
+}
+
+function showError(message) {
+  dom.errorMessage.textContent = message;
+  showScreen("error");
+}
+
+/**
+ * Keeps every "X questions" mention on the intro screen in sync with
+ * however many valid questions are actually in questions.json right now.
+ */
+function updateQuestionCountDisplays(count) {
+  document.querySelectorAll(".js-question-count").forEach((el) => {
+    el.textContent = String(count);
+  });
+}
+
 function startQuiz() {
-  quizQuestions = shuffle(questionBank).slice(0, 10);
-  currentIndex = 0;
-  score = 0;
-  showScreen(screens.quiz);
+  // Every valid question in the bank is used in the quiz — the quiz
+  // length always matches the intro screen's question count exactly.
+  state.quizQuestions = buildQuizQuestions(state.allQuestions, state.allQuestions.length);
+  state.currentIndex = 0;
+  state.score = 0;
+
+  showScreen("quiz");
   renderQuestion();
 }
 
 function renderQuestion() {
-  const q = quizQuestions[currentIndex];
-  answered = false;
+  const total = state.quizQuestions.length;
+  const index = state.currentIndex;
+  const q = state.quizQuestions[index];
 
-  $("category-label").textContent = q.category;
-  $("difficulty-label").textContent = q.difficulty;
-  $("question-count").textContent = `Question ${currentIndex + 1} of ${quizQuestions.length}`;
-  $("score-mini").textContent = `Score: ${score}`;
-  $("question-text").textContent = q.question;
-  $("progress-bar").style.width = `${((currentIndex) / quizQuestions.length) * 100}%`;
+  state.hasAnswered = false;
 
-  $("feedback").classList.add("hidden");
-  $("next-btn").classList.add("hidden");
-  $("options").innerHTML = "";
+  // Progress
+  dom.progressLabel.textContent = `Question ${index + 1} of ${total}`;
+  const percent = Math.round((index / total) * 100);
+  dom.progressFill.style.width = `${percent}%`;
+  dom.progressTrack.setAttribute("aria-valuenow", String(percent));
 
-  shuffle(q.options.map((text, index) => ({ text, index }))).forEach(option => {
-    const button = document.createElement("button");
-    button.className = "option-btn";
-    button.type = "button";
-    button.textContent = option.text;
-    button.addEventListener("click", () => answerQuestion(option.index, button));
-    $("options").appendChild(button);
+  // Tags
+  dom.questionCategory.textContent = q.category;
+  dom.questionDifficulty.textContent = q.difficulty;
+
+  // Question text
+  dom.questionText.textContent = q.question;
+
+  // Options
+  dom.optionsList.innerHTML = "";
+  q.options.forEach((optionText, i) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "option-btn";
+    btn.setAttribute("data-index", String(i));
+
+    const letterSpan = document.createElement("span");
+    letterSpan.className = "option-letter";
+    letterSpan.textContent = `${OPTION_LETTERS[i]}.`;
+
+    const textSpan = document.createElement("span");
+    textSpan.textContent = optionText;
+
+    btn.appendChild(letterSpan);
+    btn.appendChild(textSpan);
+    btn.addEventListener("click", () => handleAnswer(i));
+
+    dom.optionsList.appendChild(btn);
   });
+
+  // Reset feedback panel
+  dom.feedbackPanel.classList.add("is-hidden");
+  dom.feedbackVerdict.className = "feedback-verdict";
 }
 
-function answerQuestion(selectedIndex, selectedButton) {
-  if (answered) return;
-  answered = true;
+function handleAnswer(selectedIndex) {
+  if (state.hasAnswered) return;
+  state.hasAnswered = true;
 
-  const q = quizQuestions[currentIndex];
-  const buttons = [...document.querySelectorAll(".option-btn")];
+  const q = state.quizQuestions[state.currentIndex];
+  const isCorrect = selectedIndex === q.answer;
 
-  buttons.forEach(btn => btn.disabled = true);
-
-  if (selectedIndex === q.answer) {
-    score++;
-    selectedButton.classList.add("correct");
-    $("feedback-title").textContent = "✓ Correct";
-  } else {
-    selectedButton.classList.add("incorrect");
-    $("feedback-title").textContent = "✕ Not quite";
-    const correctText = q.options[q.answer];
-    buttons.find(btn => btn.textContent === correctText)?.classList.add("correct");
+  if (isCorrect) {
+    state.score += 1;
   }
 
-  $("score-mini").textContent = `Score: ${score}`;
-  $("explanation").textContent = q.explanation;
-  $("fact").textContent = q.fact;
-  $("feedback").classList.remove("hidden");
-  $("next-btn").classList.remove("hidden");
-  $("progress-bar").style.width = `${((currentIndex + 1) / quizQuestions.length) * 100}%`;
+  // Disable all options and mark correct/incorrect
+  const optionButtons = Array.from(dom.optionsList.querySelectorAll(".option-btn"));
+  optionButtons.forEach((btn) => {
+    const i = Number(btn.getAttribute("data-index"));
+    btn.disabled = true;
+
+    if (i === q.answer) {
+      btn.classList.add("is-correct");
+    } else if (i === selectedIndex) {
+      btn.classList.add("is-incorrect");
+    }
+  });
+
+  // Update progress bar to reflect this question as complete
+  const total = state.quizQuestions.length;
+  const percent = Math.round(((state.currentIndex + 1) / total) * 100);
+  dom.progressFill.style.width = `${percent}%`;
+  dom.progressTrack.setAttribute("aria-valuenow", String(percent));
+
+  // Feedback
+  dom.feedbackVerdict.textContent = isCorrect ? "Correct" : "Not Quite";
+  dom.feedbackVerdict.classList.add(isCorrect ? "is-correct" : "is-incorrect");
+  dom.feedbackExplanation.textContent = q.explanation;
+  dom.feedbackFact.textContent = q.fact || "No additional fact for this question.";
+
+  dom.feedbackPanel.classList.remove("is-hidden");
+  dom.feedbackPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
-function nextQuestion() {
-  if (currentIndex < quizQuestions.length - 1) {
-    currentIndex++;
-    renderQuestion();
-  } else {
-    showResults();
+function goToNextQuestion() {
+  const total = state.quizQuestions.length;
+
+  if (state.currentIndex + 1 >= total) {
+    renderResult();
+    showScreen("result");
+    return;
   }
+
+  state.currentIndex += 1;
+  renderQuestion();
 }
 
-function showResults() {
-  const total = quizQuestions.length;
+function renderResult() {
+  const total = state.quizQuestions.length;
+  const score = state.score;
   const percent = Math.round((score / total) * 100);
 
-  $("final-score").textContent = `${score}/${total}`;
-  $("final-percent").textContent = `${percent}%`;
-
-  let message = "Keep learning.";
-  if (percent >= 90) message = "Excellent IP knowledge.";
-  else if (percent >= 70) message = "Strong foundation.";
-  else if (percent >= 50) message = "Good start. Keep building.";
-  else message = "Time for another round.";
-
-  $("result-message").textContent = message;
-  $("result-detail").textContent =
-    `You answered ${score} out of ${total} questions correctly. Every question is an opportunity to learn more about intellectual property and responsible digital use.`;
-
-  showScreen(screens.result);
+  dom.resultScore.textContent = `${score}/${total}`;
+  dom.resultPercent.textContent = `${percent}%`;
+  dom.resultAssessment.textContent = getAssessment(score, total);
 }
 
-async function shareResult() {
-  const text = `I scored ${score}/${quizQuestions.length} on S.T.O.P IP Trivia. How well do you know intellectual property?`;
+/* ---------------------------------------------------------------------- */
+/* 7. EVENT HANDLERS                                                      */
+/* ---------------------------------------------------------------------- */
+
+dom.btnStart.addEventListener("click", startQuiz);
+dom.btnNext.addEventListener("click", goToNextQuestion);
+dom.btnPlayAgain.addEventListener("click", startQuiz);
+dom.btnRetry.addEventListener("click", loadQuestions);
+dom.btnShare.addEventListener("click", shareResult);
+
+/* ---------------------------------------------------------------------- */
+/* 8. SHARING                                                             */
+/* ---------------------------------------------------------------------- */
+
+function shareResult() {
+  const total = state.quizQuestions.length;
+  const score = state.score;
+  const url = window.location.href;
+  const message = `I scored ${score}/${total} on the S.T.O.P IP Trivia quiz! Test your intellectual property knowledge: ${url}`;
 
   if (navigator.share) {
-    try {
-      await navigator.share({ title: "S.T.O.P IP Trivia", text, url: window.location.href });
-      return;
-    } catch (_) {}
+    navigator
+      .share({
+        title: "S.T.O.P IP Trivia",
+        text: message,
+        url: url,
+      })
+      .catch(() => {
+        /* User cancelled the share sheet — no action needed. */
+      });
+    return;
   }
 
-  const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text + " " + window.location.href)}`;
+  // Fallback: WhatsApp share link
+  const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, "_blank", "noopener,noreferrer");
 }
 
-$("start-btn").addEventListener("click", startQuiz);
-$("next-btn").addEventListener("click", nextQuestion);
-$("retry-btn").addEventListener("click", startQuiz);
-$("share-btn").addEventListener("click", shareResult);
+/* ---------------------------------------------------------------------- */
+/* 9. INIT                                                                */
+/* ---------------------------------------------------------------------- */
 
 loadQuestions();

@@ -1,111 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#075b3a">
-  <meta name="description" content="S.T.O.P IP Trivia. Test your knowledge of intellectual property, copyright and online piracy.">
-  <title>S.T.O.P IP Trivia</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.T.O.P IP Trivia | Nigerian Copyright Commission</title>
+  <meta name="description" content="Test your knowledge of intellectual property, copyright, online piracy and creators' rights with S.T.O.P IP Trivia." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="S.T.O.P IP Trivia | Nigerian Copyright Commission" />
+  <meta property="og:description" content="Test your knowledge of intellectual property, copyright, online piracy and creators' rights with S.T.O.P IP Trivia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="social-preview.png" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header class="site-header">
-    <div class="brand">
-      <div class="brand-mark">S.T.O.P</div>
-      <div>
-        <div class="brand-title">IP TRIVIA</div>
-        <div class="brand-subtitle">Special Taskforce Against Online Piracy</div>
-      </div>
+    <div class="wordmark">
+      <span class="wordmark-stop">S.T.O.P</span>
+      <span class="wordmark-trivia">IP TRIVIA</span>
     </div>
-    <div class="header-badge">NCC</div>
+    <p class="institutional-tag">A public education initiative of the Nigerian Copyright Commission</p>
   </header>
 
   <main class="app-shell">
-    <section id="start-screen" class="screen active">
-      <div class="hero-card">
-        <span class="eyebrow">TEST • LEARN • PROTECT</span>
-        <h1>How much do you know about intellectual property?</h1>
-        <p>Answer 10 questions on copyright, creators' rights, digital content and online piracy. Learn from every answer.</p>
-        <div class="stats-row">
-          <div><strong>10</strong><span>Questions</span></div>
-          <div><strong>3</strong><span>Difficulty levels</span></div>
-          <div><strong>∞</strong><span>Retakes</span></div>
+
+    <!-- INTRO SCREEN -->
+    <section id="screen-intro" class="screen" aria-labelledby="intro-heading">
+      <h1 id="intro-heading">How much do you know about intellectual property?</h1>
+      <p class="lede">
+        Answer <span class="js-question-count">10</span> questions about copyright, online piracy, creators' rights and digital content.
+      </p>
+
+      <ul class="intro-points">
+        <li><span class="js-question-count">10</span> questions</li>
+        <li>Learn from every answer</li>
+        <li>Retake the quiz anytime</li>
+      </ul>
+
+      <button id="btn-start" class="btn btn-primary" type="button">Start Quiz</button>
+
+      <p class="tagline">Test your knowledge. Learn your rights. Protect creativity.</p>
+    </section>
+
+    <!-- QUIZ SCREEN -->
+    <section id="screen-quiz" class="screen is-hidden" aria-labelledby="quiz-heading">
+      <div class="quiz-meta">
+        <span id="quiz-progress-label" class="progress-label">Question 1 of 10</span>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Quiz progress">
+          <div id="progress-fill" class="progress-fill"></div>
         </div>
-        <button id="start-btn" class="primary-btn">Start Quiz</button>
       </div>
 
-      <div class="info-grid">
-        <div class="info-card">
-          <span>01</span>
-          <h3>Choose an answer</h3>
-          <p>Select the option you think is correct.</p>
+      <div class="question-tags">
+        <span id="question-category" class="tag tag-category">Copyright</span>
+        <span id="question-difficulty" class="tag tag-difficulty">Easy</span>
+      </div>
+
+      <h2 id="quiz-heading" class="question-text"></h2>
+
+      <div id="options-list" class="options-list" role="group" aria-labelledby="quiz-heading"></div>
+
+      <div id="feedback-panel" class="feedback-panel is-hidden" aria-live="polite">
+        <p id="feedback-verdict" class="feedback-verdict"></p>
+        <p id="feedback-explanation" class="feedback-text"></p>
+        <div class="fact-box">
+          <p class="fact-label">Did you know?</p>
+          <p id="feedback-fact" class="feedback-text"></p>
         </div>
-        <div class="info-card">
-          <span>02</span>
-          <h3>Learn why</h3>
-          <p>Every answer comes with a short explanation.</p>
-        </div>
-        <div class="info-card">
-          <span>03</span>
-          <h3>See your score</h3>
-          <p>Finish the quiz and see how you performed.</p>
-        </div>
+        <button id="btn-next" class="btn btn-primary" type="button">Next Question</button>
       </div>
     </section>
 
-    <section id="quiz-screen" class="screen">
-      <div class="quiz-top">
-        <div>
-          <span id="category-label" class="category-pill">Copyright</span>
-          <p id="question-count">Question 1 of 10</p>
-        </div>
-        <div id="score-mini" class="score-mini">Score: 0</div>
-      </div>
+    <!-- RESULT SCREEN -->
+    <section id="screen-result" class="screen is-hidden" aria-labelledby="result-heading">
+      <h1 id="result-heading">Quiz Complete</h1>
+      <p class="result-label">Your IP Knowledge Score</p>
+      <p id="result-score" class="result-score">0/10</p>
+      <p id="result-percent" class="result-percent">0%</p>
+      <p id="result-assessment" class="result-assessment"></p>
 
-      <div class="progress-track">
-        <div id="progress-bar" class="progress-bar"></div>
-      </div>
-
-      <div class="question-card">
-        <div class="difficulty" id="difficulty-label">Easy</div>
-        <h2 id="question-text"></h2>
-        <div id="options" class="options"></div>
-
-        <div id="feedback" class="feedback hidden">
-          <div id="feedback-title" class="feedback-title"></div>
-          <p id="explanation"></p>
-          <div class="did-you-know">
-            <strong>Did you know?</strong>
-            <span id="fact"></span>
-          </div>
-        </div>
-
-        <button id="next-btn" class="primary-btn next-btn hidden">Next Question</button>
+      <div class="result-actions">
+        <button id="btn-play-again" class="btn btn-primary" type="button">Play Again</button>
+        <button id="btn-share" class="btn btn-secondary" type="button">Share Result</button>
       </div>
     </section>
 
-    <section id="result-screen" class="screen">
-      <div class="result-card">
-        <span class="eyebrow">QUIZ COMPLETE</span>
-        <h1>Your IP Knowledge Score</h1>
-        <div class="score-circle">
-          <span id="final-score">0/10</span>
-          <small id="final-percent">0%</small>
-        </div>
-        <h2 id="result-message"></h2>
-        <p id="result-detail"></p>
-        <div class="result-actions">
-          <button id="share-btn" class="secondary-btn">Share Result</button>
-          <button id="retry-btn" class="primary-btn">Play Again</button>
-        </div>
-        <p class="legal-note">Educational content only. It is not legal advice. Questions should be reviewed and approved by S.T.O.P/NCC before publication.</p>
-      </div>
+    <!-- ERROR SCREEN -->
+    <section id="screen-error" class="screen is-hidden" aria-labelledby="error-heading">
+      <h1 id="error-heading">We couldn't load the quiz</h1>
+      <p id="error-message" class="lede">
+        The question bank could not be loaded. Please check your connection and try again.
+      </p>
+      <button id="btn-retry" class="btn btn-primary" type="button">Try Again</button>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <span>Protect Creativity. Protect Rights. Protect Revenue.</span>
-    <span>S.T.O.P • Nigerian Copyright Commission</span>
+    <p>S.T.O.P — Special Taskforce Against Online Piracy</p>
+    <p class="footer-note">This tool is for public education only and does not constitute legal advice.</p>
   </footer>
 
   <script src="app.js"></script>
