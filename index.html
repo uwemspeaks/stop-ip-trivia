@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.T.O.P IP Trivia | Nigerian Copyright Commission</title>
+  <meta name="description" content="Test your knowledge of intellectual property, copyright, online piracy and creators' rights with S.T.O.P IP Trivia." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="S.T.O.P IP Trivia | Nigerian Copyright Commission" />
+  <meta property="og:description" content="Test your knowledge of intellectual property, copyright, online piracy and creators' rights with S.T.O.P IP Trivia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="social-preview.png" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wordmark">
+      <span class="wordmark-stop">S.T.O.P</span>
+      <span class="wordmark-trivia">IP TRIVIA</span>
+    </div>
+    <p class="institutional-tag">A public education initiative of the Nigerian Copyright Commission</p>
+  </header>
+
+  <main class="app-shell">
+
+    <!-- INTRO SCREEN -->
+    <section id="screen-intro" class="screen" aria-labelledby="intro-heading">
+      <h1 id="intro-heading">How much do you know about intellectual property?</h1>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <p class="lede">
+        Answer <span class="js-question-count">10</span> questions about copyright, online piracy, creators' rights and digital content.
+      </p>
+
+      <div class="intro-stats">
+        <div class="intro-stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.7-2.5 2-2.5 3.5" stroke-linecap="round"/><circle cx="12" cy="16.3" r="0.3" fill="currentColor"/></svg>
+          <span class="intro-stat-value js-question-count">10</span>
+          <span class="intro-stat-label">Questions</span>
+        </div>
+        <div class="intro-stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke-linecap="round"/><circle cx="12" cy="12" r="4.2"/></svg>
+          <span class="intro-stat-value">Learn</span>
+          <span class="intro-stat-label">From every answer</span>
+        </div>
+        <div class="intro-stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4v5h5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.6 15a8 8 0 1 0 1.8-8.4L4 9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="intro-stat-value">Retake</span>
+          <span class="intro-stat-label">Anytime</span>
+        </div>
+      </div>
+
+      <button id="btn-start" class="btn btn-primary" type="button">Start Quiz</button>
+
+      <p class="tagline">Test your knowledge. Learn your rights. Protect creativity.</p>
+
+      <div class="report-card">
+        <h2>Report Online Piracy</h2>
+        <p class="report-lede">If you've seen pirated films, music or other copyrighted content online, let S.T.O.P. know.</p>
+        <div class="report-links">
+          <a class="report-link" href="mailto:STOP@copyright.gov.ng?subject=Report%20Online%20Piracy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6.5 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>STOP@copyright.gov.ng</span>
+          </a>
+          <a class="report-link" href="https://wa.me/2348137459027?text=Hello%2C%20I%20would%20like%20to%20report%20online%20piracy." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17.5 4 20l.9-3.6A7.7 7.7 0 1 1 12 19.6a7.6 7.6 0 0 1-3.6-.9L7 17.5Z" stroke-linejoin="round"/><path d="M8.7 9.3c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .5.4.2.5.6 1.6.6 1.7.1.1.1.3 0 .4-.2.3-.3.4-.5.6-.2.2-.4.3-.2.6.6 1 1.3 1.6 2.3 2 .2.1.4.1.5-.1.2-.2.6-.7.8-.9.2-.2.3-.2.5-.1.2.1 1.4.7 1.6.8.2.1.3.1.4.3 0 .2 0 1-.4 1.4-.3.4-1.1.8-1.9.6-1.7-.4-3.6-1.6-4.9-3-1-1-1.7-2.2-1.9-2.6-.1-.3-.4-1-.1-1.6Z"/></svg>
+            <span>WhatsApp — 0813-7459-027</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ SCREEN -->
+    <section id="screen-quiz" class="screen is-hidden" aria-labelledby="quiz-heading">
+      <div class="quiz-meta">
+        <span id="quiz-progress-label" class="progress-label">Question 1 of 10</span>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Quiz progress">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="question-tags">
+        <span id="question-category" class="tag tag-category">Copyright</span>
+        <span id="question-difficulty" class="tag tag-difficulty">Easy</span>
+      </div>
+
+      <h2 id="quiz-heading" class="question-text"></h2>
+
+      <div id="options-list" class="options-list" role="group" aria-labelledby="quiz-heading"></div>
+
+      <div id="feedback-panel" class="feedback-panel is-hidden" aria-live="polite">
+        <p id="feedback-verdict" class="feedback-verdict"></p>
+        <p id="feedback-explanation" class="feedback-text"></p>
+        <div class="fact-box">
+          <p class="fact-label">Did you know?</p>
+          <p id="feedback-fact" class="feedback-text"></p>
+        </div>
+        <button id="btn-next" class="btn btn-primary" type="button">Next Question</button>
+      </div>
+    </section>
+
+    <!-- RESULT SCREEN -->
+    <section id="screen-result" class="screen is-hidden" aria-labelledby="result-heading">
+      <h1 id="result-heading">Quiz Complete</h1>
+      <p class="result-label">Your IP Knowledge Score</p>
+      <p id="result-score" class="result-score">0/10</p>
+      <p id="result-percent" class="result-percent">0%</p>
+      <p id="result-assessment" class="result-assessment"></p>
+
+      <div class="result-actions">
+        <button id="btn-play-again" class="btn btn-primary" type="button">Play Again</button>
+        <button id="btn-share" class="btn btn-secondary" type="button">Share Result</button>
+      </div>
+    </section>
+
+    <!-- ERROR SCREEN -->
+    <section id="screen-error" class="screen is-hidden" aria-labelledby="error-heading">
+      <h1 id="error-heading">We couldn't load the quiz</h1>
+      <p id="error-message" class="lede">
+        The question bank could not be loaded. Please check your connection and try again.
+      </p>
+      <button id="btn-retry" class="btn btn-primary" type="button">Try Again</button>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>S.T.O.P — Special Taskforce Against Online Piracy</p>
+    <p class="footer-note">This tool is for public education only and does not constitute legal advice.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,533 @@
+/* ==========================================================================
+   S.T.O.P IP TRIVIA — DESIGN TOKENS
+
+   Palette:
+     --green-deep     #0B4D3A   primary institutional colour
+     --green-shade    #08392A   darker green for depth / hover
+     --green-tint     #E8F1EC   pale green for cards and panels
+     --gold           #C9A227   accent, used sparingly (rules, active states)
+     --ink            #17211C   primary text colour (near-black, green-leaning)
+     --paper          #F7F6F1   page background
+     --white          #FFFFFF
+     --err            #8A2E2E   incorrect-answer colour (never used alone —
+                                 always paired with an icon and label)
+
+   Type:
+     Headline / wordmark  — Georgia (serif) — carries institutional gravity
+     Body / UI            — system sans-serif — carries clarity and speed
+   ========================================================================== */
+
+:root {
+  --green-deep: #0b4d3a;
+  --green-shade: #08392a;
+  --green-tint: #e8f1ec;
+  --gold: #c9a227;
+  --ink: #17211c;
+  --paper: #f7f6f1;
+  --white: #ffffff;
+  --err: #8a2e2e;
+  --err-tint: #f5e9e9;
+
+  --font-head: Georgia, "Times New Roman", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --radius: 4px;
+  --max-width: 480px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+/* ---------- Focus states (accessibility) ---------- */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: var(--green-deep);
+  color: var(--white);
+  padding: 28px 20px 20px;
+  border-bottom: 3px solid var(--gold);
+  text-align: center;
+}
+
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-family: var(--font-head);
+}
+
+.wordmark-stop {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.wordmark-trivia {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+}
+
+.institutional-tag {
+  margin: 12px 0 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 340px;
+  margin-inline: auto;
+}
+
+/* ---------- App shell ---------- */
+.app-shell {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+.screen h1 {
+  font-family: var(--font-head);
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.hero-rule {
+  width: 52px;
+  height: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+  margin: 16px 0 18px;
+}
+
+.lede {
+  font-size: 1rem;
+  color: #3a463f;
+  margin: 0 0 22px;
+}
+
+/* ---------- Intro screen: stat grid ---------- */
+.intro-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0 0 28px;
+}
+
+.intro-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  background: var(--green-tint);
+  border-top: 3px solid var(--green-deep);
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 16px 6px 14px;
+}
+
+.intro-stat svg {
+  width: 22px;
+  height: 22px;
+  color: var(--green-deep);
+}
+
+.intro-stat-value {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--green-deep);
+  line-height: 1;
+}
+
+.intro-stat-label {
+  font-size: 0.7rem;
+  color: #4a564e;
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Report Online Piracy card ---------- */
+.report-card {
+  margin-top: 32px;
+  background: var(--white);
+  border: 1px solid #d8d3c4;
+  border-left: 4px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 18px 18px 20px;
+}
+
+.report-card h2 {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--green-deep);
+  margin: 0 0 6px;
+}
+
+.report-lede {
+  font-size: 0.88rem;
+  color: #3a463f;
+  margin: 0 0 14px;
+}
+
+.report-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.report-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 12px;
+  border: 1px solid #d8d3c4;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.report-link:hover {
+  border-color: var(--green-deep);
+  background: var(--green-tint);
+}
+
+.report-link svg {
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+  color: var(--green-deep);
+}
+
+.tagline {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #4a564e;
+  text-align: center;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 20px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--green-deep);
+  color: var(--white);
+  border-bottom: 3px solid var(--gold);
+}
+
+.btn-primary:hover {
+  background: var(--green-shade);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--green-deep);
+  border-color: var(--green-deep);
+  margin-top: 10px;
+}
+
+.btn-secondary:hover {
+  background: var(--green-tint);
+}
+
+/* ---------- Quiz meta / progress ---------- */
+.quiz-meta {
+  margin-bottom: 16px;
+}
+
+.progress-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--green-deep);
+  margin-bottom: 6px;
+}
+
+.progress-track {
+  background: var(--green-tint);
+  border-radius: 999px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: var(--gold);
+  height: 100%;
+  width: 0%;
+  transition: width 0.25s ease;
+}
+
+/* ---------- Question tags ---------- */
+.question-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.tag-category {
+  background: var(--green-deep);
+  color: var(--white);
+}
+
+.tag-difficulty {
+  background: var(--white);
+  color: var(--green-deep);
+  border: 1px solid var(--green-deep);
+}
+
+.question-text {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0 0 18px;
+}
+
+/* ---------- Options ---------- */
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  background: var(--white);
+  border: 2px solid #d8d3c4;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: var(--green-deep);
+}
+
+.option-letter {
+  font-weight: 700;
+  color: var(--green-deep);
+  flex-shrink: 0;
+}
+
+.option-btn:disabled {
+  cursor: default;
+}
+
+.option-btn.is-correct {
+  background: var(--green-tint);
+  border-color: var(--green-deep);
+}
+
+.option-btn.is-correct .option-letter::after {
+  content: " ✓";
+}
+
+.option-btn.is-incorrect {
+  background: var(--err-tint);
+  border-color: var(--err);
+}
+
+.option-btn.is-incorrect .option-letter::after {
+  content: " ✕";
+}
+
+/* ---------- Feedback panel ---------- */
+.feedback-panel {
+  border-top: 1px solid #d8d3c4;
+  padding-top: 16px;
+}
+
+.feedback-verdict {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.feedback-verdict.is-correct {
+  color: var(--green-deep);
+}
+
+.feedback-verdict.is-incorrect {
+  color: var(--err);
+}
+
+.feedback-text {
+  font-size: 0.92rem;
+  color: #3a463f;
+  margin: 0 0 14px;
+}
+
+.fact-box {
+  background: var(--green-tint);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 20px;
+}
+
+.fact-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--green-deep);
+  margin: 0 0 4px;
+}
+
+.fact-box .feedback-text {
+  margin: 0;
+  color: var(--ink);
+}
+
+/* ---------- Result screen ---------- */
+.result-label {
+  font-size: 0.9rem;
+  color: #3a463f;
+  margin: 0 0 4px;
+}
+
+.result-score {
+  font-family: var(--font-head);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--green-deep);
+  margin: 0;
+}
+
+.result-percent {
+  font-size: 1.1rem;
+  color: var(--gold);
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.result-assessment {
+  font-size: 1rem;
+  margin: 0 0 24px;
+}
+
+.result-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Error screen ---------- */
+#screen-error .lede {
+  margin-bottom: 24px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.78rem;
+  color: #5c665f;
+}
+
+.site-footer p {
+  margin: 2px 0;
+}
+
+/* ---------- Small screens (baseline ~360px) ---------- */
+@media (max-width: 360px) {
+  .wordmark-stop {
+    font-size: 1.7rem;
+  }
+
+  .question-text {
+    font-size: 1.1rem;
+  }
+
+  .intro-stats {
+    gap: 6px;
+  }
+
+  .intro-stat {
+    padding: 12px 4px 10px;
+  }
+
+  .intro-stat-value {
+    font-size: 1rem;
+  }
+
+  .intro-stat-label {
+    font-size: 0.64rem;
+  }
+}
+
+/* ---------- Larger screens: keep the column centred and readable ---------- */
+@media (min-width: 640px) {
+  .app-shell {
+    padding-top: 40px;
+  }
+
+  .screen h1 {
+    font-size: 1.7rem;
+  }
+
+  .question-text {
+    font-size: 1.35rem;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .progress-fill {
+    transition: none;
+  }
+}
