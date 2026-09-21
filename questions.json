@@ -1,6 +1,338 @@
 [
   {
     "id": 1,
+    "category": "Copyright",
+    "difficulty": "Easy",
+    "question": "Which of these is generally protected by copyright?",
+    "options": [
+      "An original song",
+      "A bare idea",
+      "A fact",
+      "A mathematical formula"
+    ],
+    "answer": 0,
+    "explanation": "Copyright protects original creative expression, such as a song, film, book, or artwork, once it is fixed in a definite form.",
+    "fact": "Copyright does not protect ideas themselves, only the original way an idea is expressed."
+  },
+  {
+    "id": 2,
+    "category": "Copyright",
+    "difficulty": "Medium",
+    "question": "Who usually owns the copyright in a work when it is first created?",
+    "options": [
+      "The government",
+      "The creator or author of the work",
+      "Whoever uploads it online first",
+      "The internet service provider"
+    ],
+    "answer": 1,
+    "explanation": "As a general rule, copyright first belongs to the person who created the work, subject to exceptions such as works made under an employment contract.",
+    "fact": "Ownership can later be transferred or licensed through a written agreement."
+  },
+  {
+    "id": 3,
+    "category": "Online Piracy",
+    "difficulty": "Easy",
+    "question": "What is online piracy?",
+    "options": [
+      "Buying a movie ticket at the cinema",
+      "Sharing copyrighted content without the rights holder's permission",
+      "Writing a positive review of a film",
+      "Streaming a film through a licensed platform"
+    ],
+    "answer": 1,
+    "explanation": "Online piracy refers to distributing, downloading, or streaming copyrighted films, music, or other content without authorisation from the rights holder.",
+    "fact": "Piracy harms creators by diverting income away from those who invested time and resources into making the content."
+  },
+  {
+    "id": 4,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "Why are unlicensed streaming and download sites considered a form of piracy?",
+    "options": [
+      "They usually make content free for everyone",
+      "They distribute copyrighted works without the rights holder's consent",
+      "They only host content that is out of copyright",
+      "They are approved by content creators"
+    ],
+    "answer": 1,
+    "explanation": "Unlicensed sites typically host or link to copyrighted films, music, and shows without any agreement with the people who own the rights to that content.",
+    "fact": "Some piracy sites also expose users to malware, scams, and unwanted data collection."
+  },
+  {
+    "id": 5,
+    "category": "Creators' Rights",
+    "difficulty": "Easy",
+    "question": "Which of these is a right that creators generally have over their work?",
+    "options": [
+      "The right to control how their work is reproduced and distributed",
+      "The right to prevent anyone from ever mentioning their name",
+      "The right to stop all criticism of their work",
+      "The right to control what other people create"
+    ],
+    "answer": 0,
+    "explanation": "Creators generally have the right to decide how their work is copied, distributed, performed, or adapted, subject to any exceptions allowed by law.",
+    "fact": "These rights allow creators to earn a living from licensing or selling their work."
+  },
+  {
+    "id": 6,
+    "category": "Creators' Rights",
+    "difficulty": "Medium",
+    "question": "What is a moral right in copyright, in simple terms?",
+    "options": [
+      "The right to be identified as the author and to object to harmful changes to the work",
+      "The right to charge any price for a ticket",
+      "The right to prevent people from watching a film in a cinema",
+      "The right to sell a work to only one buyer"
+    ],
+    "answer": 0,
+    "explanation": "Moral rights are personal to the creator and generally include being credited as the author and objecting to distortion or mutilation of the work that harms their reputation.",
+    "fact": "Moral rights can exist separately from the economic right to copy or sell a work."
+  },
+  {
+    "id": 7,
+    "category": "Digital Content",
+    "difficulty": "Easy",
+    "question": "Which of these is an example of digital content?",
+    "options": [
+      "A printed newspaper",
+      "An e-book, a podcast, or a streaming video",
+      "A handwritten letter",
+      "A physical painting"
+    ],
+    "answer": 1,
+    "explanation": "Digital content refers to material created and distributed in electronic form, such as e-books, podcasts, videos, and music files.",
+    "fact": "Digital content can usually be copied and shared instantly, which is part of why unauthorised sharing spreads so quickly."
+  },
+  {
+    "id": 8,
+    "category": "Digital Content",
+    "difficulty": "Medium",
+    "question": "What does a licence for digital content usually determine?",
+    "options": [
+      "The colour of the app used to view it",
+      "How the content may be used, copied, or shared",
+      "The internet speed of the user",
+      "The type of phone a user owns"
+    ],
+    "answer": 1,
+    "explanation": "A licence sets out the terms under which digital content can be accessed, used, copied, or redistributed, and using content outside those terms can amount to infringement.",
+    "fact": "Reading the terms of use on a platform can help you understand what you are actually allowed to do with content."
+  },
+  {
+    "id": 9,
+    "category": "Music",
+    "difficulty": "Easy",
+    "question": "When someone samples part of another artist's song without permission, what have they generally done?",
+    "options": [
+      "Created a completely new, unrelated song",
+      "Used copyrighted material without authorisation",
+      "Followed standard industry practice with no risk",
+      "Automatically become the owner of the original song"
+    ],
+    "answer": 1,
+    "explanation": "Sampling a protected recording or composition without a licence generally uses another creator's copyrighted work without permission.",
+    "fact": "Many successful songs use cleared samples, meaning the original rights holders were paid and credited."
+  },
+  {
+    "id": 10,
+    "category": "Music",
+    "difficulty": "Medium",
+    "question": "Why do musicians often rely on collective management organisations?",
+    "options": [
+      "To help collect royalties when their music is played or performed publicly",
+      "To prevent their music from ever being played on the radio",
+      "To replace the need for original songwriting",
+      "To register trademarks for unrelated businesses"
+    ],
+    "answer": 0,
+    "explanation": "Collective management organisations help musicians and songwriters license their works and collect royalties for public performance, broadcast, and other uses.",
+    "fact": "This system allows a single licence to cover many songs, making it easier for broadcasters and venues to use music legally."
+  },
+  {
+    "id": 11,
+    "category": "Film",
+    "difficulty": "Easy",
+    "question": "Recording a film in a cinema and uploading it online without permission is an example of what?",
+    "options": [
+      "Fair criticism",
+      "Copyright infringement",
+      "A licensed public screening",
+      "Promotional marketing approved by the studio"
+    ],
+    "answer": 1,
+    "explanation": "Recording and distributing a film without the rights holder's permission is a common form of copyright infringement known as camcording or bootlegging.",
+    "fact": "Camcorded copies are a major early source of pirated films that later spread across piracy websites."
+  },
+  {
+    "id": 12,
+    "category": "Film",
+    "difficulty": "Medium",
+    "question": "Why do film distributors use licensing windows, such as cinema release followed by streaming release?",
+    "options": [
+      "To make films harder to watch legally",
+      "To manage how and when a film is available across different markets and platforms",
+      "Because it is required for a film to have copyright",
+      "To prevent the film from ever generating revenue"
+    ],
+    "answer": 1,
+    "explanation": "Distributors typically license a film to different platforms in stages so that each market, such as cinemas, home video, and streaming, can generate revenue for the rights holders.",
+    "fact": "Unauthorised early leaks of a film can undermine this licensing structure and reduce revenue for everyone involved in making it."
+  },
+  {
+    "id": 13,
+    "category": "Broadcasting",
+    "difficulty": "Easy",
+    "question": "What is broadcasting, in simple terms?",
+    "options": [
+      "Sending content to a private group chat only",
+      "Transmitting content such as television or radio programmes to the public",
+      "Printing a newspaper",
+      "Uploading a private diary entry"
+    ],
+    "answer": 1,
+    "explanation": "Broadcasting involves transmitting audio or audiovisual content to the public through television, radio, or similar means.",
+    "fact": "Broadcasters can hold their own rights in a broadcast signal, separate from the rights in the underlying content being broadcast."
+  },
+  {
+    "id": 14,
+    "category": "Broadcasting",
+    "difficulty": "Hard",
+    "question": "What is signal piracy in a broadcasting context?",
+    "options": [
+      "Watching a programme at the time it is officially aired",
+      "Unauthorised interception or retransmission of a broadcast signal",
+      "A broadcaster promoting its own programme",
+      "Subscribing to a paid television service"
+    ],
+    "answer": 1,
+    "explanation": "Signal piracy occurs when a broadcast signal is intercepted, decrypted, or retransmitted without the broadcaster's authorisation, depriving them of subscription or licensing revenue.",
+    "fact": "This can include illegally shared decoder access or unauthorised streaming of live pay-TV channels."
+  },
+  {
+    "id": 15,
+    "category": "IP Basics",
+    "difficulty": "Easy",
+    "question": "Which of these best describes intellectual property?",
+    "options": [
+      "Physical land or buildings owned by a person",
+      "Creations of the mind, such as inventions, artistic works, and brand names",
+      "Money held in a bank account",
+      "Government-issued identification"
+    ],
+    "answer": 1,
+    "explanation": "Intellectual property refers to creations of the mind, including inventions, literary and artistic works, designs, and symbols used in commerce.",
+    "fact": "Common categories of intellectual property include copyright, trademarks, patents, and industrial designs."
+  },
+  {
+    "id": 16,
+    "category": "IP Basics",
+    "difficulty": "Medium",
+    "question": "What is the main difference between copyright and a trademark?",
+    "options": [
+      "Copyright protects creative works, while a trademark protects brand identifiers like logos and names",
+      "They are two names for exactly the same right",
+      "A trademark only applies to books",
+      "Copyright only applies to company names"
+    ],
+    "answer": 0,
+    "explanation": "Copyright protects original creative works such as music, films, and writing, while a trademark protects signs, such as logos or brand names, used to identify goods or services.",
+    "fact": "A single product can involve several types of intellectual property at once, such as a copyrighted design and a trademarked brand name."
+  },
+  {
+    "id": 17,
+    "category": "Responsible Sharing",
+    "difficulty": "Easy",
+    "question": "Before sharing a film or song file with friends, what is a responsible first step?",
+    "options": [
+      "Just share it, since digital files are free to copy",
+      "Consider whether you have the right or licence to share it",
+      "Assume it is always legal because it is already online",
+      "Change the file name so it cannot be tracked"
+    ],
+    "answer": 1,
+    "explanation": "Before redistributing content, it helps to consider whether you have permission or a licence to do so, since availability online does not always mean it is authorised.",
+    "fact": "Many legitimate platforms allow limited personal sharing, such as gifting a purchased e-book, under specific terms."
+  },
+  {
+    "id": 18,
+    "category": "Responsible Sharing",
+    "difficulty": "Medium",
+    "question": "Which of these is a sign that a streaming or download platform may be operating illegally?",
+    "options": [
+      "It clearly lists licensing partners and subscription terms",
+      "It offers very recent cinema releases for free with no licensing information",
+      "It has a small, well-documented content library",
+      "It requires a standard paid subscription"
+    ],
+    "answer": 1,
+    "explanation": "Sites offering unreleased or very recent cinema films for free, with no visible licensing information, are a common warning sign of unauthorised piracy platforms.",
+    "fact": "Reporting suspected piracy platforms to relevant authorities helps protect creators and legitimate businesses."
+  },
+  {
+    "id": 19,
+    "category": "Nigerian Copyright Law",
+    "difficulty": "Medium",
+    "question": "Which body is the primary government agency responsible for copyright administration and enforcement in Nigeria?",
+    "options": [
+      "The Nigerian Copyright Commission (NCC)",
+      "The Independent National Electoral Commission",
+      "The Central Bank of Nigeria",
+      "The National Broadcasting Commission"
+    ],
+    "answer": 0,
+    "explanation": "The Nigerian Copyright Commission is the government agency responsible for administering, regulating, and enforcing copyright law in Nigeria.",
+    "fact": "S.T.O.P. operates as a taskforce focused on online piracy enforcement in support of the Commission's mandate.",
+    "verify": "Confirm current statutory description of NCC's mandate against the Nigerian Copyright Act 2022 before publication."
+  },
+  {
+    "id": 20,
+    "category": "Nigerian Copyright Law",
+    "difficulty": "Hard",
+    "question": "The Nigerian Copyright Act 2022 updated copyright law to better address which modern challenge?",
+    "options": [
+      "Online and digital infringement, including internet-based piracy",
+      "Regulation of physical land ownership",
+      "Traffic and road safety enforcement",
+      "Import duties on electronics"
+    ],
+    "answer": 0,
+    "explanation": "The Nigerian Copyright Act 2022 was introduced, among other things, to modernise Nigeria's copyright framework for the digital environment, including addressing online infringement.",
+    "fact": "Updating copyright law for the digital age is a common trend as more creative works are distributed and consumed online.",
+    "verify": "This question and explanation should be checked against the specific provisions of the Copyright Act 2022 by the S.T.O.P. legal team before publication."
+  },
+  {
+    "id": 21,
+    "category": "Copyright",
+    "difficulty": "Hard",
+    "question": "If a work is not registered anywhere, can it still be protected by copyright?",
+    "options": [
+      "No, registration is always required for protection to exist",
+      "Yes, in many jurisdictions copyright arises automatically once a work is created and fixed",
+      "Only if the creator pays an annual fee",
+      "Only government publications are protected"
+    ],
+    "answer": 1,
+    "explanation": "In many jurisdictions, copyright protection arises automatically once an original work is created and fixed in a tangible form, without needing formal registration, though registration can still be useful as evidence.",
+    "fact": "A voluntary copyright notification or deposit system can still help creators establish evidence of ownership and creation date."
+  },
+  {
+    "id": 22,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "What is one common economic effect of widespread online piracy on a country's creative industry?",
+    "options": [
+      "It has no effect on creators' income",
+      "It can reduce revenue available to creators, producers, and legitimate distributors",
+      "It always increases funding for new productions",
+      "It automatically raises cinema ticket prices for everyone"
+    ],
+    "answer": 1,
+    "explanation": "Widespread piracy can divert potential sales and licensing revenue away from creators, producers, and distributors, which can reduce funding available for future productions.",
+    "fact": "Strong enforcement and public education are often used together to help protect the sustainability of creative industries."
+  },
+  {
+    "id": 23,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A trader at a Lagos market openly sells pirated DVDs of a new Nollywood film, and also keeps blank master tapes solely for producing more illegal copies. Under section 36, which of these counts as copyright infringement?",
@@ -16,7 +348,7 @@
     "verify": "Confirm current wording of section 36(1) before publication."
   },
   {
-    "id": 2,
+    "id": 24,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A Nollywood producer discovers her unreleased film has been leaked and pirated widely, and sues the distributor of the pirated copies in court. Under section 37(5), what may the court additionally consider when deciding damages?",
@@ -32,7 +364,7 @@
     "verify": "Confirm current wording of section 37(5) before publication."
   },
   {
-    "id": 3,
+    "id": 25,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A newly formed group of Afrobeats songwriters wants to start collecting performance royalties on behalf of over 100 musicians, and to sue infringers on their behalf. Under section 39, what must this group do first?",
@@ -48,7 +380,7 @@
     "verify": "Confirm current wording of section 39 and its cross-reference to section 88 before publication."
   },
   {
-    "id": 4,
+    "id": 26,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "The operator of an unlicensed website makes newly released Nollywood films available for on-demand streaming, without the rights owners' consent, and charges users a monthly subscription. Under section 44(7), what is this operator liable for?",
@@ -64,7 +396,7 @@
     "verify": "Confirm the exact fine and imprisonment figures in section 44(7) before publication, as monetary penalties are the detail most likely to be amended."
   },
   {
-    "id": 5,
+    "id": 27,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "The Nigerian Copyright Commission wants to quickly resolve a minor first-time piracy case without a full criminal trial, by accepting a payment from the offender instead. Under section 44(9), what limits this payment?",
@@ -80,7 +412,7 @@
     "verify": "Confirm current wording of section 44(9) before publication."
   },
   {
-    "id": 6,
+    "id": 28,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A DVD duplication company is convicted of mass-producing pirated films for sale. Under section 46(4), what may the court order regarding the company's assets?",
@@ -96,7 +428,7 @@
     "verify": "Confirm current wording of section 46(4) before publication."
   },
   {
-    "id": 7,
+    "id": 29,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A market vendor is found reproducing the Commission's official anti-piracy hologram stickers and attaching fake versions to pirated CDs to make them look genuine. Under section 49, what has this vendor done?",
@@ -112,7 +444,7 @@
     "verify": "Confirm current wording of section 49 before publication."
   },
   {
-    "id": 8,
+    "id": 30,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A Nigerian software developer has legally purchased a computer programme and wants to study part of its code, purely to make her own independently created programme work together with it. Under section 50(8), is this generally permitted?",
@@ -128,7 +460,7 @@
     "verify": "Confirm current wording of section 50(8)-(9) before publication."
   },
   {
-    "id": 9,
+    "id": 31,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "Someone downloads a licensed film, deliberately strips out the digital watermark that identifies its rights owner, and re-uploads it to make the pirated copy harder to trace. Under section 51, what has this person done?",
@@ -144,7 +476,7 @@
     "verify": "Confirm current wording of section 51 before publication."
   },
   {
-    "id": 10,
+    "id": 32,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A Customs officer at a Nigerian port suspects a shipping container holds pirated imported films and impounds it. Under section 53(4), how long can the goods generally be held before a decision on legal proceedings must be made?",
@@ -160,7 +492,7 @@
     "verify": "Confirm current wording of section 53(4) before publication."
   },
   {
-    "id": 11,
+    "id": 33,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A video-sharing platform operating in Nigeria receives a properly completed infringement notice from a rights owner about content a user has uploaded. Under sections 54 and 55, what must the platform do?",
@@ -176,7 +508,7 @@
     "verify": "Confirm current wording of sections 54-55 before publication."
   },
   {
-    "id": 12,
+    "id": 34,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A social media user's account has already received one infringement warning, and is then reported again for the same kind of infringing post, with no challenge pending. Under section 56, what must the platform do?",
@@ -192,7 +524,7 @@
     "verify": "Confirm current wording of section 56 before publication."
   },
   {
-    "id": 13,
+    "id": 35,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A cloud storage company hosts files uploaded by its subscribers and has no way of knowing in advance what each person uploads. Under sections 58 and 59, what is one condition it must meet to avoid monetary liability if a user's upload turns out to be infringing?",
@@ -208,7 +540,7 @@
     "verify": "Confirm current wording of sections 58, 59 and 62 before publication."
   },
   {
-    "id": 14,
+    "id": 36,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "The Nigerian Copyright Commission identifies a foreign-hosted website that streams thousands of pirated Nigerian films to Nigerian users. Under section 61, what power does the Commission have over access to that website within Nigeria?",
@@ -224,7 +556,7 @@
     "verify": "Confirm current wording of section 61 before publication."
   },
   {
-    "id": 15,
+    "id": 37,
     "category": "Nigerian Copyright Law",
     "difficulty": "Hard",
     "question": "A record label wants to reissue two things: a song written by a composer who died in 1974, and the original 1975 sound recording of that song. Under section 19, which is more likely to still require permission today?",
@@ -238,5 +570,470 @@
     "explanation": "Section 19(1)(a) protects a musical work for 70 years after the end of the year the author dies — so a composer who died in 1974 is protected until roughly 2044 — while section 19(1)(d) gives sound recordings a separate, shorter term of 50 years from when they were first made available, which for a 1975 recording has likely already run out.",
     "fact": "This is why a single old song can involve two separate copyrights with different expiry dates: the underlying musical composition, and the specific sound recording of a performance of it.",
     "verify": "Confirm current wording of section 19 before publication."
+  },
+  {
+    "id": 38,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A website re-uploads full replays and highlights of Premier League matches after they air, letting users watch them whenever they want, and charges a monthly fee for access — all without the broadcaster's consent. What is the legal consequence?",
+    "options": [
+      "None, since the matches already aired live and are now just recordings",
+      "An offence under section 44(7): making a work available for on-demand access for commercial purposes without consent, carrying a fine of at least N1,000,000 or imprisonment of at least five years, or both",
+      "A civil matter only, with no possible criminal charge",
+      "It is legal as long as the website credits the broadcaster by name"
+    ],
+    "answer": 1,
+    "explanation": "Section 44(7) makes it an offence to communicate a work to the public for commercial purposes in a way that lets people access it at a time and place of their own choosing, without the rights owner's consent — punishable by a fine of at least N1,000,000 or imprisonment of at least five years, or both.",
+    "fact": "This 'on-demand' language is what specifically targets sites that let users replay or download content whenever they like, as opposed to a live, one-time broadcast.",
+    "verify": "Confirm the exact fine and imprisonment figures in section 44(7) before publication."
+  },
+  {
+    "id": 39,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A tech vendor sells a modified streaming device pre-loaded with an app specifically built to strip the DRM protection off paid channels, giving buyers free access. Is selling this device lawful?",
+    "options": [
+      "Yes, since the vendor doesn't personally stream any pirated content",
+      "No — section 50 prohibits trafficking in devices or services designed primarily to circumvent a technological protection measure",
+      "Yes, as long as the device also plays legal DVDs",
+      "It's a consumer-electronics matter only, outside copyright law entirely"
+    ],
+    "answer": 1,
+    "explanation": "Section 50 prohibits not only circumventing a technological protection measure but also manufacturing, importing, distributing, or offering devices, products, or services designed or marketed primarily for that purpose.",
+    "fact": "Technological protection measures include DRM systems, encryption, and access controls used by legitimate streaming and pay-TV services.",
+    "verify": "Confirm current wording of section 50(1)-(2) before publication."
+  },
+  {
+    "id": 40,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A reseller knowingly buys pirated films that have had their ownership watermarks stripped out, and distributes them further online without restoring or checking that information. What has the reseller done?",
+    "options": [
+      "Nothing wrong, since the reseller didn't personally remove the watermark",
+      "Committed an offence under section 51 for distributing copies known to have had rights management information removed or altered",
+      "Only breached the original uploader's terms of service",
+      "Committed a data protection offence rather than a copyright one"
+    ],
+    "answer": 1,
+    "explanation": "Section 51 makes it an offence not just to remove rights management information, but also to distribute or broadcast copies knowing that this information has been unlawfully removed or altered, where this facilitates or conceals infringement.",
+    "fact": "This closes a loophole where someone could avoid liability for removing a watermark simply by having someone else strip it before they distribute the file.",
+    "verify": "Confirm current wording of section 51 before publication."
+  },
+  {
+    "id": 41,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A musician discovers her song has been uploaded without permission to a video platform and wants to send a formal takedown notice. Under section 54, which of these must the notice include?",
+    "options": [
+      "Only the video's URL — nothing else is required",
+      "A signature from someone authorised to act for the owner, identification of the work and the infringing material, contact details, and a declaration on oath that the use is unauthorised",
+      "Proof that the song has been officially registered with a government agency",
+      "A notarised court order confirming the infringement"
+    ],
+    "answer": 1,
+    "explanation": "Section 54(2) requires a takedown notice to include a signature of an authorised person, identification of the infringed work and the infringing material with enough detail to locate it, the complainant's contact details, a declaration on oath that the use is unauthorised, and a statement that the notice is accurate.",
+    "fact": "The notice can be sent electronically to the platform or its designated agent — it doesn't require a lawyer or a court filing.",
+    "verify": "Confirm current wording of section 54(2) before publication."
+  },
+  {
+    "id": 42,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A user whose upload was taken down insists the use was authorised and sends the platform a signed counter-notice. Under section 55(2), when may the platform restore the content?",
+    "options": [
+      "Immediately, as soon as the counter-notice is received, with no further steps",
+      "If it forwards the counter-notice to the rights owner and receives no response within seven days indicating the use was unauthorised",
+      "Only if a court orders the platform to restore it",
+      "Never — once content is taken down under section 54, it cannot be restored"
+    ],
+    "answer": 1,
+    "explanation": "Section 55(2) allows a service provider to restore content if it has forwarded the subscriber's counter-notice to the copyright owner and, within seven days, has not received a response saying the subscriber was not authorised to use the content.",
+    "fact": "This counter-notice process gives users a way to push back on takedowns they believe are mistaken or made in bad faith.",
+    "verify": "Confirm current wording of section 55(2) before publication."
+  },
+  {
+    "id": 43,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A platform takes down a pirated film after a valid notice, but a near-identical copy of the same file reappears on its system days later. Under section 55(3), what is the platform required to do?",
+    "options": [
+      "Nothing, since it already complied with the original notice",
+      "Take effective steps to prevent reloading in line with industry standards, and promptly remove the reloaded content again without waiting for a fresh notice",
+      "Wait for the rights owner to send an entirely new section 54 notice before acting",
+      "Permanently shut down the entire platform"
+    ],
+    "answer": 1,
+    "explanation": "Section 55(3) requires a service provider to take effective steps consistent with high industry standards to stop removed content from being reloaded, and if it is reloaded anyway, to promptly remove or disable access again on becoming aware, without needing a fresh notice.",
+    "fact": "This 'staydown' style duty is aimed at repeat-upload piracy, where the same infringing file keeps reappearing under new links.",
+    "verify": "Confirm current wording of section 55(3) before publication."
+  },
+  {
+    "id": 44,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A platform fails to take down infringing content after receiving a fully valid notice under section 54, and does nothing for weeks. Under section 55(6), what is the consequence for the platform?",
+    "options": [
+      "No consequence, since only the uploader can ever be held responsible",
+      "It becomes liable for breach of statutory duty, and for the infringement itself, to the same extent as the person who uploaded the content",
+      "A warning letter from the Ministry of Communications only",
+      "It must shut down its Nigerian operations within 24 hours"
+    ],
+    "answer": 1,
+    "explanation": "Section 55(6) provides that a service provider who fails to comply with the notice-and-takedown duties is liable for breach of statutory duty, and for infringement of the content, to the same extent as the person responsible for placing it on the system.",
+    "fact": "This is what gives the notice-and-takedown process real weight — ignoring a valid notice can expose the platform itself to liability, not just the original uploader.",
+    "verify": "Confirm current wording of section 55(6) before publication."
+  },
+  {
+    "id": 45,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A platform's trust-and-safety team suspends a repeat-infringer's account based on notifications it received, acting in good faith — but it later turns out one notification was mistaken. Under section 56(3), is the platform liable to the subscriber for the suspension?",
+    "options": [
+      "Yes, it must compensate the subscriber regardless of good faith",
+      "No — a service provider acting in good faith when suspending an account based on such notifications is not liable for any claim arising from the suspension",
+      "Only if the subscriber is a paying customer",
+      "Only if the mistake was discovered within 24 hours"
+    ],
+    "answer": 1,
+    "explanation": "Section 56(3) protects a service provider from liability to any person for a claim based on suspending an account, provided it acted in good faith and relied on the notification information described in the section.",
+    "fact": "This protection encourages platforms to actually enforce the repeat-infringer suspension process without fear of being sued every time a notification later proves mistaken.",
+    "verify": "Confirm current wording of section 56(3) before publication."
+  },
+  {
+    "id": 46,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A rights holder knowingly sends a false takedown notice claiming a small creator's original review video is infringing, purely to get it removed from a platform. Under section 57, what is this rights holder exposed to?",
+    "options": [
+      "Nothing, since only platforms can be held liable under the Act",
+      "Liability in damages for injuries suffered by the creator as a result of the platform relying on the false claim",
+      "A criminal fine only, with no civil consequence",
+      "Automatic loss of all their other copyrights"
+    ],
+    "answer": 1,
+    "explanation": "Section 57 makes a person who knowingly misrepresents that material is infringing, or that it was removed by mistake or misidentification, liable in damages for injuries suffered as a result of the service provider relying on that misrepresentation.",
+    "fact": "This provision protects legitimate creators from bad-faith takedown abuse, balancing the notice-and-takedown system in both directions.",
+    "verify": "Confirm current wording of section 57 before publication."
+  },
+  {
+    "id": 47,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A video-hosting platform's moderation team sees an obviously pirated bulk upload — dozens of new-release films in a single folder with studio watermarks visible — but does nothing because no formal notice has been filed yet. Under section 58(a), does the lack of a formal notice protect the platform?",
+    "options": [
+      "Yes — without a formal section 54 notice, the platform can never lose its safe harbour",
+      "Not necessarily — safe harbour also requires the platform not be aware of facts or circumstances from which infringing activity is apparent, and to act once such awareness exists",
+      "Yes, because only courts can determine what counts as 'obvious' piracy",
+      "No — platforms automatically lose all protection the moment any pirated content exists anywhere on their service"
+    ],
+    "answer": 1,
+    "explanation": "Section 58(a) conditions safe harbour on the platform not having actual knowledge of infringement or, absent that, not being aware of facts or circumstances from which infringing activity is apparent — and acting expeditiously once such awareness arises, whether or not a formal notice was filed.",
+    "fact": "This is sometimes called a 'red flag' standard: obvious signs of piracy can remove safe harbour protection even without a formal takedown notice.",
+    "verify": "Confirm current wording of section 58(a) before publication."
+  },
+  {
+    "id": 48,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A hosting platform runs targeted ads specifically alongside its most-viewed pirated movie uploads, earning more ad revenue the more those videos are watched, and it has the technical ability to remove them but doesn't. Under section 58(b), does this affect its safe harbour eligibility?",
+    "options": [
+      "No, ad revenue is always unrelated to copyright liability",
+      "Yes — safe harbour requires that the platform not receive a financial benefit directly attributable to the infringing activity where it has the right and ability to control that activity",
+      "No, as long as the ads are placed automatically by a third-party ad network",
+      "Yes, but only if the platform is a Nigerian company"
+    ],
+    "answer": 1,
+    "explanation": "Section 58(b) denies safe harbour where the service provider receives a financial benefit directly attributable to the infringing activity, in circumstances where it has the right and ability to control that activity.",
+    "fact": "This test looks at both the financial incentive and the practical ability to stop the infringing content — having one without the other is treated differently under the section.",
+    "verify": "Confirm current wording of section 58(b) before publication."
+  },
+  {
+    "id": 49,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A search engine indexes and links directly to a website widely known for hosting pirated Nigerian films, and continues linking to it even after being notified. Under section 59, is the search engine protected from liability?",
+    "options": [
+      "Yes, automatically, because search engines only provide links and never host the content themselves",
+      "Not automatically — safe harbour for linking tools also requires acting expeditiously to remove or disable the link once notified or aware of infringement",
+      "Yes, because linking to a site is legally different from copying a file",
+      "No, search engines are always excluded from any safe harbour under the Act"
+    ],
+    "answer": 1,
+    "explanation": "Section 59 extends safe harbour to information location tools like directories and hyperlinks, but only if the provider lacks actual knowledge of infringement (or acts once aware), doesn't receive a financial benefit tied to controllable infringing activity, and responds expeditiously once notified under section 54.",
+    "fact": "This means search engines and link directories aren't automatically exempt from copyright law just because they don't host the infringing file directly.",
+    "verify": "Confirm current wording of section 59 before publication."
+  },
+  {
+    "id": 50,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A film studio wants to identify who is behind an anonymous account that keeps re-uploading its pirated content. Under section 60, what must accompany their application to the court for a disclosure order?",
+    "options": [
+      "Nothing — the court will order disclosure automatically on request",
+      "A copy of the section 54 takedown notice, and a sworn declaration that the identity will only be used to protect rights under the Act",
+      "A police report confirming a criminal investigation is already underway",
+      "Written consent from the anonymous account holder"
+    ],
+    "answer": 1,
+    "explanation": "Section 60 requires the application for a disclosure order to include a copy of the section 54 notification and a sworn declaration that the purpose is to identify the alleged infringer, with the information to be used only to protect rights under the Act.",
+    "fact": "This lets a rights owner unmask an anonymous repeat infringer through the courts, while requiring them to swear that they won't misuse the disclosed identity.",
+    "verify": "Confirm current wording of section 60 before publication."
+  },
+  {
+    "id": 51,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "The Nigerian Copyright Commission wants to block a foreign Telegram channel that distributes pirated Nigerian films to thousands of subscribers. Section 61 says the Commission may act 'notwithstanding the provisions of any other law.' What does that phrase signify?",
+    "options": [
+      "That the Commission must still get separate approval under every other applicable law first",
+      "That this blocking power operates even if another law might otherwise be read to limit or require additional authorisation for it",
+      "That the provision only applies to websites, not to apps or messaging channels",
+      "That it only takes effect after a criminal conviction"
+    ],
+    "answer": 1,
+    "explanation": "Section 61's 'notwithstanding' wording gives the Commission's blocking power an overriding effect, letting it block or disable access to infringing content, links, or platforms it reasonably believes to be infringing, regardless of what other laws might otherwise suggest.",
+    "fact": "The section refers broadly to 'content, link or website hosted on a system or network,' which is generally understood to cover more than just traditional websites.",
+    "verify": "Confirm current wording and scope of section 61 before publication, particularly regarding platforms other than websites."
+  },
+  {
+    "id": 52,
+    "category": "Online Piracy",
+    "difficulty": "Hard",
+    "question": "A platform doesn't just passively host user uploads — its staff actively curate, feature, and promote specific pirated movie uploads to boost engagement, rather than staying neutral. Under section 62, would it still qualify for the Part VII safe harbours?",
+    "options": [
+      "Yes, curation is irrelevant as long as users technically uploaded the files",
+      "No — the safe harbours only apply to neutral, automatic and passive activity, and to providers who don't take an active role in making the content available",
+      "Yes, as long as the platform has an email address listed somewhere on its site",
+      "No, because only government-owned platforms can ever qualify for safe harbour"
+    ],
+    "answer": 1,
+    "explanation": "Section 62(1) limits the Part VII safe harbours to the neutral, automatic and passive activities of a service provider, and to providers who do not take an active role in making content available and who designate an agent to receive notices.",
+    "fact": "This is why the safe harbours are sometimes described as protecting 'conduits,' not curators — actively promoting specific infringing content can take a platform outside that protection.",
+    "verify": "Confirm current wording of section 62 before publication."
+  },
+  {
+    "id": 53,
+    "category": "Online Piracy",
+    "difficulty": "Easy",
+    "question": "A friend sends you a WhatsApp link to \"watch any new movie free\" on a site you've never heard of. What's the smartest first move?",
+    "options": [
+      "Click it right away — free is free",
+      "Be cautious: sites offering brand-new releases for free are usually pirate sites, and often carry malware or scams too",
+      "Forward it to everyone you know",
+      "Assume it's safe because a friend sent it"
+    ],
+    "answer": 1,
+    "explanation": "Legitimate platforms don't offer brand-new releases for free with no subscription or rental fee. A link promising that is almost always an unauthorised copy — and a friend sharing it doesn't make the site itself trustworthy.",
+    "fact": "Many piracy sites make their real money from the malware, pop-up scams, and data harvesting bundled around the 'free' video, not from the video itself."
+  },
+  {
+    "id": 54,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "You find a \"free streaming\" site for a movie still in cinemas. Before it lets you watch, it asks you to enter your debit card details just to \"verify you're not a robot.\" What should you do?",
+    "options": [
+      "Enter your card details — verification is normal",
+      "Close the site immediately. No legitimate free service needs your card number just to prove you're human",
+      "Enter a fake card number instead",
+      "Call your bank first, then enter your real details"
+    ],
+    "answer": 1,
+    "explanation": "This is a classic scam pattern layered on top of piracy: the 'free movie' is bait, and the real goal is to steal your card details. Genuine age or bot checks never require full payment card information.",
+    "fact": "Piracy and financial scams often travel together — the promise of free content is one of the most effective lures scammers use online."
+  },
+  {
+    "id": 55,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "You're about to download a movie through a torrent app because it's faster than waiting for a legal release. What's a real risk you're taking on, beyond the copyright issue?",
+    "options": [
+      "None — torrent files are just video files like any other",
+      "Torrented files can carry hidden malware, and your device may also upload the file to others while you download it",
+      "Torrenting automatically deletes your other files",
+      "Torrenting is only risky if the movie is in a foreign language"
+    ],
+    "answer": 1,
+    "explanation": "Pirated torrent files are frequently bundled with malware, and by design, torrenting usually means your device is also distributing (uploading) the file to other people while you download it — spreading the infringement further.",
+    "fact": "Unlike streaming a pirate site, torrenting often makes you an active distributor of the pirated file, not just a viewer."
+  },
+  {
+    "id": 56,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "A moviegoer secretly records a new film on their phone in the cinema and uploads it online that same night. Is this really \"piracy,\" since they just recorded what they legally paid to watch?",
+    "options": [
+      "No — if you paid for your ticket, you're free to record and share it",
+      "Yes — a cinema ticket lets you watch the film, not copy and redistribute it; recording and uploading it is piracy",
+      "It's only piracy if more than 1,000 people watch the upload",
+      "It's fine as long as the recording quality is poor"
+    ],
+    "answer": 1,
+    "explanation": "Buying a ticket grants permission to watch the film once in the cinema — it doesn't transfer any right to record, copy, or distribute it. A camcorded upload is one of the earliest and most damaging sources of pirated film copies.",
+    "fact": "Camcorded copies often leak online before a film is even available legally anywhere else, hitting box office and licensing revenue hardest in the opening weeks."
+  },
+  {
+    "id": 57,
+    "category": "Online Piracy",
+    "difficulty": "Easy",
+    "question": "A roadside vendor sells burned DVDs of recent films for a fraction of the retail price. A customer says, \"It's fine, nobody's really getting hurt.\" Is that true?",
+    "options": [
+      "Yes, DVDs are old technology anyway so it doesn't matter",
+      "No — the filmmakers, actors, crew, and legal distributors all lose income they were supposed to earn from that sale",
+      "Yes, as long as the vendor also sells legitimate DVDs sometimes",
+      "It depends on how popular the film is"
+    ],
+    "answer": 1,
+    "explanation": "Every pirated DVD sold is a sale that legitimate creators, distributors, and retailers don't get. The money instead goes to someone who had no right to reproduce the film in the first place.",
+    "fact": "The people affected by piracy aren't just famous actors — it also includes camera crews, editors, costume designers, and countless others paid from a film's legitimate revenue."
+  },
+  {
+    "id": 58,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "You want expensive design software but can't afford it, so you download a \"cracked\" version with a keygen to unlock it for free. What should concern you about this, besides it being unauthorised copying?",
+    "options": [
+      "Nothing else — cracked software works exactly the same as the real thing",
+      "Cracked software and keygens are a common way attackers install malware, spyware, or ransomware on your device",
+      "Cracked software is always slower than the original",
+      "It only becomes a problem if you use it for paid client work"
+    ],
+    "answer": 1,
+    "explanation": "Software crackers and keygens are one of the most common ways malware spreads, since people willingly disable their antivirus or run untrusted executables to make the crack work.",
+    "fact": "Many free or low-cost legal alternatives exist for common paid software — often a safer and more sustainable option than a cracked version."
+  },
+  {
+    "id": 59,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "You're selling access to your personal streaming account login to strangers online for a small fee, so more people can watch using your one paid subscription. What's the issue with this?",
+    "options": [
+      "Nothing — you paid for the account, so you can do what you want with it",
+      "This usually breaches the streaming service's terms of use, and reselling access like this can shade into unauthorised commercial distribution",
+      "It's fine as long as you only sell to five people or fewer",
+      "It's only a problem if the streaming service finds out immediately"
+    ],
+    "answer": 1,
+    "explanation": "Most subscription services license an account for personal or household use. Reselling access to strangers for profit goes beyond that licence and can amount to unauthorised commercial distribution of the service's content.",
+    "fact": "Streaming services can usually detect unusual account-sharing patterns and may suspend accounts involved in this kind of resale."
+  },
+  {
+    "id": 60,
+    "category": "Copyright",
+    "difficulty": "Medium",
+    "question": "A website lets you paste in any song's streaming link and instantly download it as an MP3 file for free. Is using a tool like this a copyright problem?",
+    "options": [
+      "No, since you already had access to stream the song legally",
+      "Yes — most streaming licences only cover streaming, not downloading permanent personal copies, so stream-ripping usually infringes copyright",
+      "No, because MP3 files are a different format from the original",
+      "Only if you download more than 50 songs"
+    ],
+    "answer": 1,
+    "explanation": "A streaming subscription generally licenses you to stream music through that platform, not to create and keep your own downloaded copy outside it. Stream-ripping tools bypass that limit and typically infringe the recording's copyright.",
+    "fact": "Many streaming apps offer an official offline-download feature within the app itself — this is different, since it's part of what you actually licensed."
+  },
+  {
+    "id": 61,
+    "category": "Copyright",
+    "difficulty": "Easy",
+    "question": "You find a brand-new novel available as a free PDF on an unofficial site, instead of buying the e-book. Who is most directly affected by this?",
+    "options": [
+      "No one — books don't really make money for authors anyway",
+      "The author and publisher, who lose the sale they were relying on to earn a living from their work",
+      "Only large publishing companies, never individual authors",
+      "Only readers who paid full price, since they'll feel cheated"
+    ],
+    "answer": 1,
+    "explanation": "Many authors, especially independent and early-career ones, rely directly on book sales for income. An unauthorised free copy is a sale — and the royalty from it — that the author never receives.",
+    "fact": "Public libraries are a legal way to read books for free — libraries pay for the copies they lend, so authors and publishers still get paid."
+  },
+  {
+    "id": 62,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "A big boxing match is only available on a paid pay-per-view channel, but you find someone illegally livestreaming it for free on social media. What's the harm in just watching?",
+    "options": [
+      "No harm — the event already happened, so watching later or for free changes nothing",
+      "It still deprives the event organisers and broadcasters of the revenue the pay-per-view model was designed to generate",
+      "It's only a problem for the boxers, not the broadcaster",
+      "It's legal as long as the stream has fewer than 100 viewers"
+    ],
+    "answer": 1,
+    "explanation": "Pay-per-view pricing is how many live sporting events fund production, broadcasting rights, and payouts to the athletes and organisers involved. Watching an unauthorised free stream bypasses that entire funding model.",
+    "fact": "Illegal live-sport streams are also a common source of intrusive ads and malware, since they often need to squeeze in aggressive advertising to make money."
+  },
+  {
+    "id": 63,
+    "category": "Copyright",
+    "difficulty": "Medium",
+    "question": "You're designing a flyer for a small business event and grab a nice-looking photo you found on a Google Images search. Is that photo automatically free to use?",
+    "options": [
+      "Yes — if it shows up in a search engine, it's free to use",
+      "Not necessarily — a search engine just finds images, it doesn't tell you whether the photographer has licensed it for free or commercial use",
+      "Yes, as long as you crop out any watermark",
+      "Yes, but only if the flyer is for a non-profit event"
+    ],
+    "answer": 1,
+    "explanation": "A search engine indexes images from across the web regardless of their licence terms. Many are copyrighted and require permission or payment; only images specifically marked for free or commercial reuse are safe to use without asking.",
+    "fact": "Sites offering explicitly free-to-use images (often labelled 'royalty-free' or under a Creative Commons licence) are a much safer source for flyers and marketing material."
+  },
+  {
+    "id": 64,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "You use a VPN to access a piracy website that's normally blocked in your country. Does using a VPN make the piracy legal?",
+    "options": [
+      "Yes — a VPN makes you anonymous, so nothing you do can be traced or counted as illegal",
+      "No — a VPN can hide your location and traffic, but it doesn't change whether downloading or streaming the content without authorisation is infringing",
+      "Yes, but only if the VPN server is in a different country",
+      "It depends on how fast the VPN connection is"
+    ],
+    "answer": 1,
+    "explanation": "A VPN affects your privacy and which regional blocks you can bypass — it has no bearing on whether the underlying content is authorised. Accessing infringing content through a VPN is still accessing infringing content.",
+    "fact": "VPNs have many entirely legitimate uses, like protecting your data on public Wi-Fi — the tool itself isn't the issue, how it's used is."
+  },
+  {
+    "id": 65,
+    "category": "Online Piracy",
+    "difficulty": "Medium",
+    "question": "You download a modified app (an APK) that promises to unlock a paid app's premium features for free. What's a realistic risk here?",
+    "options": [
+      "There's no real risk since it's just an app like any other",
+      "Modified APKs from unofficial sources often carry malware, and installing them bypasses the safety checks official app stores normally provide",
+      "The only risk is that the app might look slightly different",
+      "Modified APKs are actually safer because they're smaller in size"
+    ],
+    "answer": 1,
+    "explanation": "Official app stores screen apps for malware and policy violations before allowing downloads. A modded APK from an unofficial source skips all of that — on top of using the original app's paid features without authorisation.",
+    "fact": "Malicious modded APKs have been used to quietly harvest passwords, banking details, and personal photos from people's phones."
+  },
+  {
+    "id": 66,
+    "category": "Online Piracy",
+    "difficulty": "Easy",
+    "question": "You stumble across a website that's clearly hosting dozens of pirated new-release films for free download. What's the most constructive thing you can do?",
+    "options": [
+      "Nothing — it's not your problem",
+      "Report the site to the relevant anti-piracy authority or platform, rather than downloading from it or sharing the link further",
+      "Download everything quickly before the site gets taken down",
+      "Share the link widely so more people know about it"
+    ],
+    "answer": 1,
+    "explanation": "Reporting a piracy site helps enforcement bodies act on it, protecting creators' income. Downloading from it or sharing the link only adds to the harm, even if you didn't build the site yourself.",
+    "fact": "Many anti-piracy taskforces, including S.T.O.P., accept public reports of piracy websites and platforms as one of their key enforcement tools."
+  },
+  {
+    "id": 67,
+    "category": "Copyright",
+    "difficulty": "Medium",
+    "question": "A content creator remixes someone else's copyrighted song into their own video without asking, but adds the caption \"no copyright intended.\" Does that caption protect them?",
+    "options": [
+      "Yes — saying 'no copyright intended' legally exempts you from any copyright claim",
+      "No — that phrase has no legal effect at all; using someone's copyrighted work without permission or a valid exception is still potentially infringing",
+      "Yes, but only if the video gets fewer than 10,000 views",
+      "Yes, as long as the original song is credited somewhere in the description"
+    ],
+    "answer": 1,
+    "explanation": "\"No copyright intended\" is a popular online myth with no actual legal weight. Whether a use is permitted depends on things like having a licence or the use qualifying under a recognised exception — not on a disclaimer in the caption.",
+    "fact": "Crediting the original creator is good practice and often expected, but on its own, credit doesn't replace needing permission to use someone's copyrighted work."
   }
 ]
